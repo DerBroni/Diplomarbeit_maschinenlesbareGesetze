@@ -22,7 +22,7 @@
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
     xmlns:xsi="./Schema-Dateien/AkomaNtoso_Specs_Schema.xsd"
     xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd">
-    <bill name="">
+    <bill name="Probe-Verordnung GVIDVDV">
         <!-- Metadaten -->
         <meta>
             <identification source="#BMU">
