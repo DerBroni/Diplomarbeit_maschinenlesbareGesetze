@@ -20,7 +20,7 @@
 
 
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsi="./Schema-Dateien/AkomaNtoso_Specs_Schema.xsd"
     xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd">
     <bill name="">
         <!-- Metadaten -->
@@ -29,7 +29,7 @@
                 <FRBRWork>
                     <FRBRthis value="/akn/de/documentcollection/a01fc9bd/!regelungstext"/>
                     <FRBRuri value="/akn/de/documentcollection/a01fc9bd/!regelungstext"/>
-                    <FRBRdate date="2015-01-01" name="Anpassung des Gesetzes auf Basis einer Änderungsnovelle (ElektroG)"/>
+                    <FRBRdate date="2012-12-08" name="Verordnung über den Vorbereitungsdienst für den gehobenen Verwaltungsinformatikdienst des Bundes (GVIDVDV)"/>
                     <FRBRauthor href="#Referent"/>
                     <FRBRcountry value="de"/>
                     <FRBRnumber value="a01fc9bd"/>
@@ -37,7 +37,7 @@
                 <FRBRExpression>
                     <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext"/>
                     <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext"/>
-                    <FRBRdate date="2015-01-01" name="Anpassung des Gesetzes auf Basis einer Änderungsnovelle (ElektroG)"/>
+                    <FRBRdate date="2012-12-08" name="Verordnung über den Vorbereitungsdienst für den gehobenen Verwaltungsinformatikdienst des Bundes (GVIDVDV)"/>
                     <FRBRauthor href="#Referent"/>
                     <FRBRversionNumber value=""/>
                     <FRBRlanguage language="deu"/>
@@ -45,7 +45,7 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext.xml"/>
                     <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext.xml"/>
-                    <FRBRdate date="2015-01-01" name="Anpassung des Gesetzes auf Basis einer Änderungsnovelle (ElektroG)"/>
+                    <FRBRdate date="2012-12-08" name="Verordnung über den Vorbereitungsdienst für den gehobenen Verwaltungsinformatikdienst des Bundes (GVIDVDV)"/>
                     <FRBRauthor href="#Referent"/>
                 </FRBRManifestation>
             </identification>
@@ -78,15 +78,13 @@
         <preface>
             <longTitle>
                 <p>
-                    <docStage>Referentenentwurf</docStage> des <docProponent>
-                        Bundesumweltministeriums</docProponent>
-                    <docTitle>Gesetz zur Neuordnung des Gesetzes über das Inverkehrbringen, die
-                        Rücknahme und die umweltverträgliche Entsorgung von Elektro- und
-                        Elektronikgeräten</docTitle> (<shortTitle>Elektro- und
-                        Elektronikgerätegesetz</shortTitle>
+                    <docStage>Verordnung</docStage> des <docProponent>
+                        Bundesministeriums des Innern und für Heimat</docProponent>
+                    <docTitle>Verordnung über den Vorbereitungsdienst für den gehobenen 
+                        Verwaltungsinformatikdienst des Bundes (GVIDVDV)</docTitle> (<shortTitle>GVIDVDV</shortTitle>
                     <sup>
                         <authorialNote marker="1" placement="bottom">
-                            <p> Dieses Gesetz dient der Umsetzung der <ref href="">Richtlinie
+                            <!--  <p> Dieses Gesetz dient der Umsetzung der <ref href="">Richtlinie
                                     2012/19/EU des Europäischen Parlaments und des Rates vom 4. Juli
                                     2012 über Elektro- und Elektronik-Altgeräte (ABl. EU Nr. L 197
                                     S. 38)</ref>. Die Verpflichtungen aus der <ref href="">
@@ -96,9 +94,9 @@
                                     die Dienste der Informationsgesellschaft (ABl. EG Nr. L 104 S.
                                     37), geändert durch die Richtlinie 98/48/EG des Europäischen
                                     Parlaments und des Rates vom 20. Juli 1998 (ABl. EG Nr. L 217 S.
-                                    18)</ref>, sind beachtet worden. </p>
+                                    18)</ref>, sind beachtet worden. </p> -->
                         </authorialNote>
-                    </sup> --> </p>
+                    </sup> --> </p> 
             </longTitle>
             <block name="">
                 <date xsi:type="ausfertigungsdatum" date="2000-01-01"> Vom ...</date>
@@ -108,8 +106,10 @@
         <!-- Einleitung -->
         <preamble>
             <formula xsi:type="eingangsformelGesetz" name="eingangsformel">
-                <p> Der Bundestag hat mit Zustimmung des Bundesrates das folgende Gesetz
-                    beschlossen:</p>
+                <p> Auf Grund des § 26 Absatz 1 Nummer 2 des Bundesbeamtengesetzes 
+                    vom 5. Februar 2009 (BGBl. I S. 160) in Verbindung
+                    mit § 10 der Bundeslaufbahnverordnung vom 12. Februar 
+                    2009 (BGBl. I S. 284) verordnet das Ministerium des Innern:</p>
 
             </formula>
         </preamble>
@@ -119,11 +119,10 @@
             <hcontainer name="" xsi:type="artikelStammform">
                 <num>Artikel 1</num>
                 <!-- Überschrift -->
-                <heading>Gesetz über das Inverkehrbringen, die Rücknahme und die umweltverträgliche
-                    Entsorgung von Elektro- und Elektronikgeräten</heading>
-                <subheading>(<shortTitle>Elektro- und Elektronikgerätegesetz - <inline
+                <heading>Verordnung über den Vorbereitungsdienst für den gehobenen Verwaltungsinformatikdienst des Bundes</heading>
+                <subheading>(<shortTitle>GVIDVDV - <inline
                             xsi:type="amtlicheAbkuerzung" name="amtlicheAbkuerzung">
-                            <ref href="">as</ref> ElektroG</inline> )</shortTitle>
+                            <ref href="">as</ref> GVIDVDV</inline> )</shortTitle>
                 </subheading>
                 <!-- Einleitung -->
                 <!-- Inhaltsübersicht -->
@@ -155,511 +154,88 @@
                 <!-- Abschnitt 1 -->
                 <section xsi:type="abschnittParagraph">
                     <num>Abschnitt 1</num>
-                    <heading>Allgemeine Vorschriften</heading>
+                    <heading>Allgemeines</heading>
                     <!-- § 1 -->
                     <paragraph>
                         <num>§ 1</num>
-                        <heading>Abfallwirtschaftliche Ziele</heading>
-                        <alinea xsi:type="juristischerAbsatz">
-                            <num/>
-                            <!-- Satz 1 -->
-                            <clause xsi:type="satzOhneUntergliederung">
-                                <content>
-                                    <p>Dieses Gesetz legt Anforderungen an die Produktverantwortung
-                                        nach <ref href="">§ 23 des Kreislaufwirtschaftsgesetzes für
-                                            Elektro- und Elektronikgeräte</ref> fest.</p>
-                                </content>
-                            </clause>
-                            <!-- Satz 2 -->
-                            <clause xsi:type="satzOhneUntergliederung">
-                                <content>
-                                    <p>Es bezweckt vorrangig die Vermeidung von Abfällen von
-                                        Elektro- und Elektronikgeräten und darüber hinaus die
-                                        Vorbereitung zur Wiederverwendung, das Recycling und andere
-                                        Formen der Verwertung solcher Abfälle, um die zu
-                                        beseitigende Abfallmenge zu reduzieren und dadurch die
-                                        Effizienz der Ressourcennutzung zu verbessern.</p>
-                                </content>
-                            </clause>
-                            <!-- Saz 3 -->
-                            <clause xsi:type="satzOhneUntergliederung">
-                                <content>
-                                    <p>Um diese abfallwirtschaftlichen Ziele zu erreichen, soll das
-                                        Gesetz das Marktverhalten der Verpflichteten regeln.</p>
-                                </content>
-                            </clause>
-                        </alinea>
-                    </paragraph>
-                    <!-- $ 2 -->
-                    <paragraph>
-                        <num>§ 2</num>
-                        <heading>Anwendungsbereich</heading>
-                        <!-- Absatz 1 -->
+                        <heading>Diplomstudium</heading>
+                        <!--Absatz 1-->
                         <alinea>
                             <num>(1)</num>
                             <!-- Satz 1 -->
-                            <clause xsi:type="satzMitUntergliederung">
-                                <intro>
-                                    <p>Dieses Gesetz gilt grundsätzlich für sämtliche Elektro- und
-                                        Elektronikgeräte. Sie sind in die folgenden Kategorien
-                                        unterteilt:</p>
-                                </intro>
-                                <!-- Satz 1 Teilsatz 1 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>1.</num>
-                                    <content>
-                                        <p>Wärmeüberträger</p>
-                                    </content>
-                                </subclause>
-                                <!-- Satz 1 Teilsatz 2 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>2.</num>
-                                    <content>
-                                        <p>Bildschirme, Monitore und Geräte, die Bildschirme mit
-                                            einer Oberfläche von mehr als 100 Quadratzentimeter
-                                            enthalten, </p>
-                                    </content>
-                                </subclause>
-                                <!-- Satz 1 Teilsatz 3 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>3.</num>
-                                    <content>
-                                        <p>Lampen,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Satz 1 Teilsatz 4 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>4.</num>
-                                    <content>
-                                        <p>Geräte, bei denen mindestens eine der äußeren Abmessungen
-                                            mehr als 50 Zentime- ter beträgt (Großgeräte),</p>
-                                    </content>
-                                </subclause>
-                                <!-- Satz 1 Teilsatz 5 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>5.</num>
-                                    <content>
-                                        <p>Geräte, bei denen keine der äußeren Abmessungen mehr als
-                                            50 Zentimeter beträgt (Kleingeräte) und </p>
-                                    </content>
-                                </subclause>
-                                <!-- Satz 1 Teilsatz 6 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>6.</num>
-                                    <content>
-                                        <p>kleine Geräte der Informations- und
-                                            Telekommunikationstechnik, bei denen keine der äußeren
-                                            Abmessungen mehr als 50 Zentimeter beträgt.</p>
-                                    </content>
-                                </subclause>
-                            </clause>
-                            <!-- Satz 2 -->
                             <clause xsi:type="satzOhneUntergliederung">
                                 <content>
-                                    <p>Elektro- und Elektronikgeräte im Sinne des Satzes 1 sind
-                                        insbesondere die in Anlage 1 auf- geführten Geräte.</p>
+                                    <p>Als fachspezifischer Vorbereitungsdienst für den gehobenen nichttechnischen Verwaltungsdienst des Bundes wird ein
+                                        Vorbereitungsdienst für den Verwaltungsinformatikdienst eingerichtet.
+                                    </p>
                                 </content>
                             </clause>
                         </alinea>
-                        <!-- Absatz 2 -->
+                        <!--Absatz 2-->
                         <alinea>
-                            <num>(2)</num>
-                            <!-- Satz 1 -->
-                            <clause xsi:type="satzMitUntergliederung">
-                                <intro>
-                                    <p>Dieses Gesetz gilt nicht für folgende Elektro- und
-                                        Elektronikgeräte:</p>
-                                </intro>
-                                <!-- Teilsatz 1 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>1.</num>
-                                    <content>
-                                        <p>Geräte, die der Wahrung der wesentlichen
-                                            Sicherheitsinteressen der Bundesrepublik Deutschland
-                                            dienen, einschließlich Waffen, Munition und
-                                            Wehrmaterial, die eigens für militärische Zwecke
-                                            bestimmt sind,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 2 -->
-                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
-                                    <num>2.</num>
-                                    <intro>
-                                        <p>Geräte, die</p>
-                                    </intro>
-                                    <!-- Teilsatz 2 a -->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>a)</num>
-                                        <content>
-                                            <p>speziell als Teil eines anderen Gerätetyps, der vom
-                                                Geltungsbereich dieses Gesetzes ausgenommen ist oder
-                                                nicht in den Geltungsbereich dieses Geset- zes
-                                                fällt, konzipiert und darin eingebaut sind und</p>
-                                        </content>
-                                    </division>
-                                    <!-- Teilsatz 2 b -->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>a)</num>
-                                        <content>
-                                            <p>ihre Funktion nur als Teil dieses anderen Gerätetyps
-                                                erfüllen können,</p>
-                                        </content>
-                                    </division>
-                                </subclause>
-                                <!-- Teilsatz 3 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>3.</num>
-                                    <content>
-                                        <p>Glühlampen,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 4 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>4.</num>
-                                    <content>
-                                        <p>Ausrüstungsgegenstände für einen Einsatz im Weltraum,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 5 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>5.</num>
-                                    <content>
-                                        <p>ortsfeste industrielle Großwerkzeuge,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 6 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>6.</num>
-                                    <content>
-                                        <p>ortsfeste Großanlagen; dieses Gesetz gilt jedoch für
-                                            Geräte, die nicht speziell als Teil dieser Anlagen
-                                            konzipiert und darin eingebaut sind,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 7 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>7.</num>
-                                    <content>
-                                        <p>Verkehrsmittel zur Personen- und Güterbeförderung; dieses
-                                            Gesetz gilt jedoch für elektrische Zweiradfahrzeuge, für
-                                            die eine Typgenehmigung nicht erforderlich ist,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 8 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>8.</num>
-                                    <content>
-                                        <p>bewegliche Maschinen,</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 9 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>9.</num>
-                                    <content>
-                                        <p>Geräte, die ausschließlich zu Zwecken der Forschung und
-                                            Entwicklung speziell ent- worfen wurden und nur auf
-                                            zwischenbetrieblicher Ebene bereitgestellt werden,
-                                            und</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 10 -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>10.</num>
-                                    <content>
-                                        <p>medizinische Geräte und In-vitro-Diagnostika, bei denen
-                                            jeweils zu erwarten ist, dass diese vor Ablauf ihrer
-                                            Lebensdauer infektiös werden, und aktive implantierbare
-                                            medi- zinische Geräte.</p>
-                                    </content>
-                                </subclause>
-                            </clause>
-
-                        </alinea>
-                        <!-- Absatz 3 -->
-                        <alinea>
-                            <num>(3)</num>
+                            <num>(1)</num>
                             <!-- Satz 1 -->
                             <clause xsi:type="satzOhneUntergliederung">
                                 <content>
-                                    <p>Soweit dieses Gesetz keine abweichenden Vorschriften enthält,
-                                        sind das Kreislaufwirt- schaftsgesetz mit Ausnahme von § 17
-                                        Absatz 4 und § 54, und diejenigen Rechtsverordnun- gen in
-                                        der jeweils geltenden Fassung anzuwenden, die auf der
-                                        Grundlage des Kreislaufwirt- schaftsgesetzes oder des bis
-                                        zum 1. Juni 2012 geltenden Kreislaufwirtschafts- und
-                                        Abfallge- setzes erlassen wurden.</p>
-                                </content>
-                            </clause>
-                            <!-- Satz 2 -->
-                            <clause xsi:type="satzOhneUntergliederung">
-                                <content>
-                                    <p>Die §§ 27, 47 Absatz 1 bis 6, § 50 Absatz 3, § 59 Absatz 1
-                                        Satz 1 und die §§ 62 und 66 des Kreislaufwirtschaftsgesetzes
-                                        gelten entsprechend. Bestehen auf Grund anderer
-                                        Rechtsvorschriften besondere Anforderungen an die
-                                        Bewirtschaftung von Altgeräten oder an die
-                                        Produktkonzeption, bleiben diese Anforderungen unberührt.
-                                        Die Nachweispflichten nach § 50 Absatz 1 des
-                                        Kreislaufwirtschaftsgesetzes gelten nicht für die
-                                        Überlassung von Altgeräten an Einrichtungen zur Sammlung und
-                                        Erstbehandlung von Altge- räten.</p>
+                                    <p>Der Diplomstudiengang "Verwaltungsinformatik" an der Hochschule des Bundes für öffentliche Verwaltung (Hochschule)
+                                        ist der Vorbereitungsdienst für den gehobenen Verwaltungsinformatikdienst des Bundes.
+                                    </p>
                                 </content>
                             </clause>
                         </alinea>
                     </paragraph>
-                    <!-- § 3 -->
+                    <!-- $ 1a -->
                     <paragraph>
-                        <num>§ 3</num>
-                        <heading>Begriffsbestimmungen</heading>
+                        <num>§ 1a</num>
+                        <heading>Allgemeine Voraussetzung für die Zulässigkeit von Abweichungen aus Anlass der 
+                            COVID-19-Pandemie
+                        </heading>
+                        <!-- Absatz 1 -->
                         <alinea>
                             <num/>
                             <!-- Satz 1 -->
-                            <clause xsi:type="satzMitUntergliederung">
-                                <intro>
-                                    <p>Im Sinne dieses Gesetzes bezeichnet der Ausdruck</p>
-                                </intro>
-                                <!-- Teilsatz 1 -->
-                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
-                                    <num>1.</num>
-                                    <intro>
-                                        <p>Elektro- und Elektronikgeräte: Geräte, die für den
-                                            Betrieb mit Wechselspannung von höchstens 1 000 Volt
-                                            oder Gleichspannung von höchstens 1 500 Volt ausgelegt
-                                            sind und </p>
-                                    </intro>
-                                    <!-- Teilsatz 1 a)-->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>a)</num>
-                                        <content>
-                                            <p>die zu ihrem ordnungsgemäßen Betrieb von elektrischen
-                                                Strömen oder elekt- romagnetischen Feldern abhängig
-                                                sind, oder</p>
-                                        </content>
-                                    </division>
-                                    <!-- Teilsatz 1 b)-->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>b)</num>
-                                        <content>
-                                            <p> der Erzeugung, Übertragung und Messung von
-                                                elektrischen Strömen und elekt- romagnetischen
-                                                Feldern dienen; </p>
-                                        </content>
-                                    </division>
-                                </subclause>
-                                <!-- Teilsatz 2. -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>2.</num>
-                                    <content>
-                                        <p> Geräteart: Einteilung von Geräten innerhalb einer
-                                            Kategorie, die hinsichtlich der Art ihrer Nut- zung oder
-                                            ihrer Funktionen vergleichbare Merkmale aufweisen; </p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 3. -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>1.</num>
-                                    <content>
-                                        <p> Altgeräte: Elektro- und Elektronikgeräte, die Abfall im
-                                            Sinne des § 3 Absatz 1 Satz 1 des Kreis-
-                                            laufwirtschaftsgesetzes sind, einschließlich aller
-                                            Bauteile, Unterbaugruppen und Ver- brauchsmaterialien,
-                                            die zum Zeitpunkt des Eintritts der Abfalleigenschaft
-                                            Teil des Alt- gerätes sind; </p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 4. -->
-                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
-                                    <num>4.</num>
-                                    <intro>
-                                        <p>historische Altgeräte:</p>
-                                    </intro>
-                                    <!-- Teilsatz 4 a)-->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>a)</num>
-                                        <content>
-                                            <p>Altgeräte, die vor dem 13. August 2005 in Verkehr
-                                                gebracht wurden,</p>
-                                        </content>
-                                    </division>
-                                    <!-- Teilsatz 4 b)-->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>b)</num>
-                                        <content>
-                                            <p> Photovoltaikmodule und Leuchten aus privaten
-                                                Haushalten, die Altgeräte sind und vor dem .
-                                                [einsetzen: Datum Inkrafttreten des Gesetzes] in
-                                                Verkehr ge- bracht wurden, oder</p>
-                                        </content>
-                                    </division>
-                                    <!-- Teilsatz 4 c)-->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>c)</num>
-                                        <content>
-                                            <p>Altgeräte, die vor dem 14. August 2018 in Verkehr
-                                                gebracht wurden oder wer- den, soweit sie vom
-                                                Anwendungsbereich dieses Gesetzes nach § 47 nicht
-                                                er- fasst sind;</p>
-                                        </content>
-                                    </division>
-                                </subclause>
-                                <!-- Teilsatz 5. -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>5.</num>
-                                    <content>
-                                        <p>Altgeräte aus privaten Haushalten: Altgeräte aus privaten
-                                            Haushaltungen im Sinne des Kreislaufwirtschaftsgesetzes
-                                            so- wie Altgeräte aus sonstigen Herkunftsbereichen,
-                                            soweit die Beschaffenheit der dort anfallenden Altgeräte
-                                            mit der Beschaffenheit von in privaten Haushaltungen
-                                            anfallen- den Altgeräten vergleichbar ist; Altgeräte,
-                                            die sowohl von privaten Haushalten als auch von anderen
-                                            Nutzern als privaten Haushalten genutzt werden, gelten
-                                            als Altge- räte aus privaten Haushalten; </p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 6. -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>6.</num>
-                                    <content>
-                                        <p>Anbieten: das im Rahmen einer gewerbsmäßigen Tätigkeit
-                                            auf den Abschluss eines Kaufver- trages gerichtete
-                                            Präsentieren oder öffentliche Zugänglichmachen von
-                                            Elektro- und Elektronikgeräten; dies umfasst auch die
-                                            Aufforderung, ein Angebot abzugeben; </p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 7. -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>7.</num>
-                                    <content>
-                                        <p>Bereitstellung auf dem Markt: jede entgeltliche oder
-                                            unentgeltliche Abgabe eines Elektro- und
-                                            Elektronikgerätes zum Vertrieb, Verbrauch oder zur
-                                            Verwendung im Geltungsbereich dieses Gesetzes im Rahmen
-                                            einer gewerbsmäßigen Tätigkeit;</p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 8. -->
-                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
-                                    <num>8.</num>
-                                    <content>
-                                        <p>Inverkehrbringen: die erstmalige Bereitstellung eines
-                                            Elektro- und Elektronikgerätes auf dem Markt im
-                                            Geltungsbereich dieses Gesetzes; </p>
-                                    </content>
-                                </subclause>
-                                <!-- Teilsatz 9. -->
-                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
-                                    <num>9.</num>
-                                    <intro>
-                                        <p>Hersteller: jede natürliche oder juristische Person oder
-                                            Personengesellschaft, die unabhängig von der
-                                            Verkaufsmethode, einschließlich der
-                                            Fernkommunikationsmittel im Sinne des § 312c Absatz 2
-                                            des Bürgerlichen Gesetzbuchs,</p>
-                                    </intro>
-                                    <!-- Teilsatz 1 a)-->
-                                    <division xsi:type="teilsatzBuchstabeMitUntergliederung">
-                                        <num>a)</num>
-                                        <intro>
-                                            <p>Elektro- und Elektronikgeräte</p>
-                                        </intro>
-                                        <!-- Teilsatz 1 a aa) -->
-                                        <subdivision xsi:type="teilsatzDoppelbuchstabeOhneUntergliederung">
-                                            <num>aa)</num>
-                                            <content>
-                                                <p>unter ihrem Namen oder Warenzeichen herstellt und
-                                                  innerhalb des Gel- tungsbereiches dieses Gesetzes
-                                                  anbietet oder</p>
-                                            </content>
-                                        </subdivision>
-                                        <!-- Teilsatz 1 a bb) -->
-                                        <subdivision xsi:type="teilsatzDoppelbuchstabeOhneUntergliederung">
-                                            <num>bb)</num>
-                                            <content>
-                                                <p>konzipieren oder herstellen lässt und sie unter
-                                                  ihrem Namen oder Waren- zeichen innerhalb des
-                                                  Geltungsbereiches dieses Gesetzes anbietet,</p>
-                                            </content>
-                                        </subdivision>
-                                    </division>
-                                    <!-- Teilsatz 1 b) -->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>b)</num>
-                                        <content>
-                                            <p>Elektro- und Elektronikgeräte anderer Anbieter unter
-                                                ihrem eigenen Namen o- der Warenzeichen im
-                                                Geltungsbereich dieses Gesetzes anbietet oder ge-
-                                                werbsmäßig weiterverkauft, wobei der Anbieter oder
-                                                Weiterverkäufer dann nicht als Hersteller anzusehen
-                                                ist, wenn der Name oder das Warenzeichen des Her-
-                                                stellers gemäß Buchstabe a auf dem Gerät erscheint,
-                                            </p>
-                                        </content>
-                                    </division>
-                                    <!-- Teilsatz 1 c) -->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>c)</num>
-                                        <content>
-                                            <p>erstmals aus einem anderen Mitgliedstaat der
-                                                Europäischen Union oder aus ei- nem Drittland
-                                                stammende Elektro- und Elektronikgeräte auf dem
-                                                Markt im Gel- tungsbereich dieses Gesetzes anbietet
-                                                oder</p>
-                                        </content>
-                                    </division>
-                                    <!-- Teilsatz 1 d) -->
-                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
-                                        <num>d)</num>
-                                        <content>
-                                            <p> Elektro- und Elektronikgeräte mit Hilfe der
-                                                Fernkommunikationstechnik direkt privaten Haushalten
-                                                oder anderen Nutzern als privaten Haushalten im Gel-
-                                                tungsbereich dieses Gesetzes anbietet und in einem
-                                                anderen Mitgliedstaat der Europäischen Union oder
-                                                einem Drittland niedergelassen ist; </p>
-                                        </content>
-                                    </division>
-                                </subclause>
-                                <!-- Ausalssen der Nummern 10 - 25 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                              <content>
+                                <p>
+                                    Von den bis zum 31. Dezember 2024 befristeten Sonderregelungen dieser Verordnung darf nur Gebrauch gemacht werden,
+                                    wenn dies wegen der Bewältigung der COVID-19-Pandemie getroffenen Maßnahmen notwendig ist.
+                                </p>
+                              </content>
                             </clause>
                         </alinea>
                     </paragraph>
-                </section>
-                <!-- Abschnitt 2 -->
-                <section xsi:type="abschnittParagraph">
-                    <num>Abschnitt 2</num>
-                    <heading>Pflichten beim Inverkehrbringen von Elektro- und
-                        Elektronikgeräten</heading>
-                    <!-- $ 4 -->
+                    <!-- § 2 -->
                     <paragraph>
-                        <num>$ 1</num>
-                        <heading>Produktkonzeption</heading>
+                        <num>§ 2</num>
+                        <heading>Ziele des Studiums</heading>
+                        <alinea>
+                            <num/>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>
+                                        Das Studium vermittelt in enger Verbindung von Wissenschaft und Praxis die wissenschaftlichen Methoden und
+                                        Kenntnisse sowie die berufspraktischen Fähigkeiten und Kenntnisse, die für die Erfüllung der Aufgaben im 
+                                        gehobenen Verwaltungsinformatikdienst des Bundes erforderlich sind. Es soll die Studierenden zu verantwortlichem
+                                        Handeln in einem freiheitlichen, demokratischen, und sozialen Rechtsstaat sowie zur Zusammenarbeit im förderalen
+                                        und europäischen Raum befähigen. 
+                                    </p>
+                                </content>
+                            </clause>
+                        </alinea>
+                    </paragraph>
+                    <!-- $ 3 -->
+                    <paragraph>
+                        <num>$ 3</num>
+                        <heading>Dienstbehörden</heading>
                         <!-- Abatz 1 -->
                         <alinea>
                             <num>(1)</num>
                             <!-- Satz 1 -->
                             <clause xsi:type="satzOhneUntergliederung">
                                 <content>
-                                    <p> Hersteller haben ihre Elektro- und Elektronikgeräte
-                                        möglichst so zu gestalten, dass ins- besondere die
-                                        Wiederverwendung, die Demontage und die Verwertung von
-                                        Altgeräten, ihren Bauteilen und Werkstoffen berücksichtigt
-                                        und erleichtert werden. Elektro- und Elektronikge- räte, die
-                                        vollständig oder teilweise mit Batterien oder Akkumulatoren
-                                        betrieben werden kön- nen, sind möglichst so zu gestalten,
-                                        dass Batterien und Akkumulatoren durch Endnutzer problemlos
-                                        entnommen werden können. </p>
-                                </content>
-                            </clause>
-                            <!-- Satz 2 -->
-                            <clause xsi:type="satzOhneUntergliederung">
-                                <content>
-                                    <p> Sind Batterien oder Akkumulatoren nicht problemlos durch den
-                                        Endnutzer entnehmbar, sind die Elektro- und Elektronikgeräte
-                                        so zu gestalten, dass die Batterien und Akkumulatoren
-                                        problemlos durch vom Hersteller unabhängiges Fach- personal
-                                        entnommen werden können.</p>
+                                    <p> Einstellungsbehörden sind Einrichtungen der Bundesverwaltung, institutionelle Zuwendungsempfänger
+                                         des Bundes und die Hochschule. </p>
                                 </content>
                             </clause>
                         </alinea>
@@ -668,29 +244,8 @@
                             <num>(2)</num>
                             <clause xsi:type="satzOhneUntergliederung">
                                 <content>
-                                    <p>Die Hersteller sollen die Wiederverwendung nicht durch
-                                        besondere Konstruktionsmerk- male oder Herstellungsprozesse
-                                        verhindern, es sei denn, dass die Konstruktionsmerkmale
-                                        rechtlich vorgeschrieben sind oder die Vorteile dieser
-                                        besonderen Konstruktionsmerkmale oder Herstellungsprozesse
-                                        überwiegen, beispielsweise im Hinblick auf den Gesundheits-
-                                        schutz, den Umweltschutz oder auf
-                                        Sicherheitsvorschriften.</p>
-                                </content>
-                            </clause>
-                        </alinea>
-                        <!-- Absatz 3 -->
-                        <alinea>
-                            <num>(3)</num>
-                            <clause xsi:type="satzOhneUntergliederung">
-                                <content>
-                                    <p>Absatz 1 Satz 2 und 3 gilt nicht für Elektro- und
-                                        Elektronikgeräte, in denen aus Gründen der Sicherheit, der
-                                        Leistung, aus medizinischen Gründen oder aus Gründen der
-                                        Vollständig- keit von Daten eine ununterbrochene
-                                        Stromversorgung notwendig und eine ständige Verbin- dung
-                                        zwischen dem Gerät und der Batterie oder dem Akkumulator
-                                        erforderlich ist.</p>
+                                    <p>Die Studierenden unterstehen neben der Dienstaufsicht der Leitung der jeweiligen
+                                        Einstellungsbehörde auch der Dienstaufsicht der Präsidentin oder des Präsidenten der Hochschule.</p>
                                 </content>
                             </clause>
                         </alinea>
