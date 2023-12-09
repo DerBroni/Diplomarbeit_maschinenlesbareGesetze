@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ##############################################################################
+    
+Blaupause auf Basis der BMI-Test-Instanzen
+############################################################################## -->
+
+<akomaNtoso xmlns:xsi="./Schema-Dateien/AkomaNtoso_Specs_Schema.xsd"
+ xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd"
+ xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+    <!-- Regelungsentwurf -->
+    <documentCollection name="Regelungsentwurf">
+        <!-- Metadaten-->
+        <meta>
+            <identification source="#BMU">
+                <FRBRWork>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd"/>
+                    <FRBRdate date="2012-12-08" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRcountry value="de"/>
+                    <FRBRnumber value="a01fc9bd"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03"/>
+                    <FRBRdate date="2012-12-08" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRversionNumber value=""/>
+                    <FRBRlanguage language="deu"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03.xml"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03.xml"/>
+                    <FRBRdate date="2012-12-08" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                </FRBRManifestation>
+            </identification> 
+            <!-- Weitere Metadaten: Hier können zusäzliche Metadaten zu einem Regelungsentwurf bzw. zu einem Bestandteil eines Regelungsentwurfs erfasst werden, die nicht im Rahmen des 
+            Standards LegalDocML.de gepflegt werden und nicht gegen das LegalDocML.de Schema validiert werden. -->
+            <proprietary source="#BMI">
+                <desn xmlns="https://www.bmi.bund.de/DE/startseite/startseite-node.html">
+                    <raeumlicherGeltungsbereich>
+                        <anfangsdatum>2023-12-09</anfangsdatum>
+                        <gebiet>Bundesrepublik Deutschland</gebiet>
+                    </raeumlicherGeltungsbereich>
+                </desn>      
+            </proprietary>
+        </meta>
+        
+        <collectionBody>
+            <!-- Vorblatt -->
+            <component>
+                <documentRef href="regelungsentwurf_01_vorblatt.xml" showAs="Vorblatt"/>
+            </component>
+            <!-- Regelungstext -->
+            <component>
+                <documentRef href="regelungsentwurf_01_regelungstext.xml" showAs="Regelungstext"/>
+            </component>
+            <!-- Begründung -->
+            <component>
+                <documentRef href="regelungsentwurf_01_begruendung.xml" showAs="Begründung"/>
+            </component>
+        </collectionBody>
+    </documentCollection>
+</akomaNtoso>

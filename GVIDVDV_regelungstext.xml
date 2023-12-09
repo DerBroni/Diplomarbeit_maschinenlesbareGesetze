@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ##############################################################################
+    
+	Februar 2020
+	
+	Nicht normatives Beispiel zur Umsetzung eines Regelungsentwurfs in LegalDocML.de.
+    Textkürzungen und -auslassungen gegenüber dem Originaldokument dienen der besseren Übersichtlichkeit in der vorliegenden XML-Instanz. 
+    
+    Version:
+    LegalDocML.de 1.0
+    
+    Art des Regelungsentwurfs: 
+    Mantelgesetz inklusive Stammgesetz inklusive Änderungsnovelle 
+        
+    Kurztitel und amtliche Abkürzung:
+    Elektro-  und Elektronikgerätegesetz - ElektroG
+    
+############################################################################## -->
+
+
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd">
+    <bill name="">
+        <!-- Metadaten -->
+        <meta>
+            <identification source="#BMU">
+                <FRBRWork>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/!regelungstext"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/!regelungstext"/>
+                    <FRBRdate date="2015-01-01" name="Anpassung des Gesetzes auf Basis einer Änderungsnovelle (ElektroG)"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRcountry value="de"/>
+                    <FRBRnumber value="a01fc9bd"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext"/>
+                    <FRBRdate date="2015-01-01" name="Anpassung des Gesetzes auf Basis einer Änderungsnovelle (ElektroG)"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRversionNumber value=""/>
+                    <FRBRlanguage language="deu"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext.xml"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!regelungstext.xml"/>
+                    <FRBRdate date="2015-01-01" name="Anpassung des Gesetzes auf Basis einer Änderungsnovelle (ElektroG)"/>
+                    <FRBRauthor href="#Referent"/>
+                </FRBRManifestation>
+            </identification>
+            <analysis source="">
+                <!-- Metadaten zu Änderungsbefehlen im aktuellen XML-Dokument (Regelungstext)                 
+                    AKN-Referenz: http://docs.oasis-open.org/legaldocml/akn-core/v1.0/csprd02/part1-vocabulary/akn-core-v1.0-csprd02-part1-vocabulary-COMMENT-TAGS.html#_Toc451851319
+                    Die genaue und automatisierte Umsetzung von Änderungsbefehlen ist Bestandteil der zukünftigen Anwendwendungsentwicklung. 
+                    Das folgende Codebeispiel dient daher nur der Veranschaulichung von Möglichkeiten in AKN und ist nicht als Vorgabe zu betrachten --> 
+                <activeModifications>                    
+                    <!-- Metadaten zum ersten ausgehenden Änderungsbefehl in diesem Regelungstext (XML-Dokument) der eine Textuelle Änderung beinhaltet:
+                    Änderungsbefehl #1: <mod> Dem <ref href="LINK">§ 11 Absatz 2 des Abfallverbringungsgesetzes vom 19. Juli1 2007 (BGBl. IS. 1462), das zuletzt durch 
+                    Artikel 4 Absatz 34 des Gesetzes vom 07. August 2013 (BGBl. I S. 3154) geändert worden ist</ref>, wird folgender Satz angefügt: 
+                    "<quotedText> Bei den Kontrollen nach Satz 1 und 2 sind § 23 Absatz 4 und Absatz 5 Satz 1 des Elektro- und Elektronikgerätegesetzes
+                    ... anzuwenden.“ </quotedText>" </mod>
+                    -->
+                    <textualMod eId="activeModifications__textualMod_1" type="insertion">                        
+                        <!-- Verweis auf die Stelle im aktuellen XML-Dokument, die den Änderungsbefehl beinhaltet (das erste <mod> Element) -->
+                        <source href="#mod_1"/>                        
+                        <!-- Verweis auf das zu ändernde Inhaltselement im Zieldokument (AbfVerbrG, § 11 Absatz 2), das von dem aktuellen Änderungsbefehl betroffen ist -->
+                        <destination href="http://www.recht.bund.de/akn/de/AbfVerbrG/2006-06-14/eID_ZielElement__paragraph_11__absatz_2"/>
+                        <!-- Verweis auf den ersten <quotedText> (zitierten Text) innerhalb des ersten <mod> (Änderungsbefehls) in diesem XML-Dokument, welcher dem 
+                        zu ändernden Inhaltselement im Zieldokument angefügt werden soll -->
+                        <new href="#mod_1_qtxt_1"/>
+                    </textualMod>
+                </activeModifications>
+            </analysis>            
+        </meta>
+        
+        <!-- Dokumentenkopf -->
+        <preface>
+            <longTitle>
+                <p>
+                    <docStage>Referentenentwurf</docStage> des <docProponent>
+                        Bundesumweltministeriums</docProponent>
+                    <docTitle>Gesetz zur Neuordnung des Gesetzes über das Inverkehrbringen, die
+                        Rücknahme und die umweltverträgliche Entsorgung von Elektro- und
+                        Elektronikgeräten</docTitle> (<shortTitle>Elektro- und
+                        Elektronikgerätegesetz</shortTitle>
+                    <sup>
+                        <authorialNote marker="1" placement="bottom">
+                            <p> Dieses Gesetz dient der Umsetzung der <ref href="">Richtlinie
+                                    2012/19/EU des Europäischen Parlaments und des Rates vom 4. Juli
+                                    2012 über Elektro- und Elektronik-Altgeräte (ABl. EU Nr. L 197
+                                    S. 38)</ref>. Die Verpflichtungen aus der <ref href="">
+                                    Richtlinie 98/34/EG des Europäischen Parlaments und des Rates
+                                    vom 22. Juni 1998 über ein Informationsverfahren auf dem Gebiet
+                                    der Normen und technischen Vorschriften und den Vorschriften für
+                                    die Dienste der Informationsgesellschaft (ABl. EG Nr. L 104 S.
+                                    37), geändert durch die Richtlinie 98/48/EG des Europäischen
+                                    Parlaments und des Rates vom 20. Juli 1998 (ABl. EG Nr. L 217 S.
+                                    18)</ref>, sind beachtet worden. </p>
+                        </authorialNote>
+                    </sup> --> </p>
+            </longTitle>
+            <block name="">
+                <date xsi:type="ausfertigungsdatum" date="2000-01-01"> Vom ...</date>
+            </block>
+            
+        </preface>
+        <!-- Einleitung -->
+        <preamble>
+            <formula xsi:type="eingangsformelGesetz" name="eingangsformel">
+                <p> Der Bundestag hat mit Zustimmung des Bundesrates das folgende Gesetz
+                    beschlossen:</p>
+
+            </formula>
+        </preamble>
+        <!-- Hauptteil -->
+        <body xsi:type="regelungstextHauptteilMantelform">
+            <!-- Artikel 1: Stammform-->
+            <hcontainer name="" xsi:type="artikelStammform">
+                <num>Artikel 1</num>
+                <!-- Überschrift -->
+                <heading>Gesetz über das Inverkehrbringen, die Rücknahme und die umweltverträgliche
+                    Entsorgung von Elektro- und Elektronikgeräten</heading>
+                <subheading>(<shortTitle>Elektro- und Elektronikgerätegesetz - <inline
+                            xsi:type="amtlicheAbkuerzung" name="amtlicheAbkuerzung">
+                            <ref href="">as</ref> ElektroG</inline> )</shortTitle>
+                </subheading>
+                <!-- Einleitung -->
+                <!-- Inhaltsübersicht -->
+                <intro>
+                    <tblock>
+                        <heading>Inhaltsübersicht</heading>
+                        <toc xsi:type="inhaltsverzeichnis">
+                            <tocItem xsi:type="verzeichniseintrag"
+                                href="#cmps_1__cmp_2__doccol_1__cmps_1__cmp_1__bill_1__body_1__sec_1"
+                                level="1"> </tocItem>
+                            <tocItem xsi:type="verzeichniseintrag"
+                                href="#cmps_1__cmp_2__doccol_1__cmps_1__cmp_1__bill_1__body_1__sec_1__para_1"
+                                level="2"> </tocItem>
+                            <tocItem xsi:type="verzeichniseintrag"
+                                href="#cmps_1__cmp_2__doccol_1__cmps_1__cmp_1__bill_1__body_1__sec_1__para_2"
+                                level="2"> </tocItem>
+                        </toc>
+                    </tblock>
+                    <tblock>
+                        <heading>Anlagenübersicht</heading>
+                        <toc xsi:type="anlagenverzeichnis">
+                            <tocItem xsi:type="verzeichniseintrag"
+                                href="cmps_1__cmp_2__doccol_1__cmps_1__cmp_1__bill_1__body_1__hcont_3"
+                                level="1"> </tocItem>
+                        </toc>
+                    </tblock>
+                </intro>
+                <!-- Hauptteil Stammform -->
+                <!-- Abschnitt 1 -->
+                <section xsi:type="abschnittParagraph">
+                    <num>Abschnitt 1</num>
+                    <heading>Allgemeine Vorschriften</heading>
+                    <!-- § 1 -->
+                    <paragraph>
+                        <num>§ 1</num>
+                        <heading>Abfallwirtschaftliche Ziele</heading>
+                        <alinea xsi:type="juristischerAbsatz">
+                            <num/>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Dieses Gesetz legt Anforderungen an die Produktverantwortung
+                                        nach <ref href="">§ 23 des Kreislaufwirtschaftsgesetzes für
+                                            Elektro- und Elektronikgeräte</ref> fest.</p>
+                                </content>
+                            </clause>
+                            <!-- Satz 2 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Es bezweckt vorrangig die Vermeidung von Abfällen von
+                                        Elektro- und Elektronikgeräten und darüber hinaus die
+                                        Vorbereitung zur Wiederverwendung, das Recycling und andere
+                                        Formen der Verwertung solcher Abfälle, um die zu
+                                        beseitigende Abfallmenge zu reduzieren und dadurch die
+                                        Effizienz der Ressourcennutzung zu verbessern.</p>
+                                </content>
+                            </clause>
+                            <!-- Saz 3 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Um diese abfallwirtschaftlichen Ziele zu erreichen, soll das
+                                        Gesetz das Marktverhalten der Verpflichteten regeln.</p>
+                                </content>
+                            </clause>
+                        </alinea>
+                    </paragraph>
+                    <!-- $ 2 -->
+                    <paragraph>
+                        <num>§ 2</num>
+                        <heading>Anwendungsbereich</heading>
+                        <!-- Absatz 1 -->
+                        <alinea>
+                            <num>(1)</num>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzMitUntergliederung">
+                                <intro>
+                                    <p>Dieses Gesetz gilt grundsätzlich für sämtliche Elektro- und
+                                        Elektronikgeräte. Sie sind in die folgenden Kategorien
+                                        unterteilt:</p>
+                                </intro>
+                                <!-- Satz 1 Teilsatz 1 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>1.</num>
+                                    <content>
+                                        <p>Wärmeüberträger</p>
+                                    </content>
+                                </subclause>
+                                <!-- Satz 1 Teilsatz 2 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>2.</num>
+                                    <content>
+                                        <p>Bildschirme, Monitore und Geräte, die Bildschirme mit
+                                            einer Oberfläche von mehr als 100 Quadratzentimeter
+                                            enthalten, </p>
+                                    </content>
+                                </subclause>
+                                <!-- Satz 1 Teilsatz 3 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>3.</num>
+                                    <content>
+                                        <p>Lampen,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Satz 1 Teilsatz 4 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>4.</num>
+                                    <content>
+                                        <p>Geräte, bei denen mindestens eine der äußeren Abmessungen
+                                            mehr als 50 Zentime- ter beträgt (Großgeräte),</p>
+                                    </content>
+                                </subclause>
+                                <!-- Satz 1 Teilsatz 5 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>5.</num>
+                                    <content>
+                                        <p>Geräte, bei denen keine der äußeren Abmessungen mehr als
+                                            50 Zentimeter beträgt (Kleingeräte) und </p>
+                                    </content>
+                                </subclause>
+                                <!-- Satz 1 Teilsatz 6 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>6.</num>
+                                    <content>
+                                        <p>kleine Geräte der Informations- und
+                                            Telekommunikationstechnik, bei denen keine der äußeren
+                                            Abmessungen mehr als 50 Zentimeter beträgt.</p>
+                                    </content>
+                                </subclause>
+                            </clause>
+                            <!-- Satz 2 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Elektro- und Elektronikgeräte im Sinne des Satzes 1 sind
+                                        insbesondere die in Anlage 1 auf- geführten Geräte.</p>
+                                </content>
+                            </clause>
+                        </alinea>
+                        <!-- Absatz 2 -->
+                        <alinea>
+                            <num>(2)</num>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzMitUntergliederung">
+                                <intro>
+                                    <p>Dieses Gesetz gilt nicht für folgende Elektro- und
+                                        Elektronikgeräte:</p>
+                                </intro>
+                                <!-- Teilsatz 1 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>1.</num>
+                                    <content>
+                                        <p>Geräte, die der Wahrung der wesentlichen
+                                            Sicherheitsinteressen der Bundesrepublik Deutschland
+                                            dienen, einschließlich Waffen, Munition und
+                                            Wehrmaterial, die eigens für militärische Zwecke
+                                            bestimmt sind,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 2 -->
+                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
+                                    <num>2.</num>
+                                    <intro>
+                                        <p>Geräte, die</p>
+                                    </intro>
+                                    <!-- Teilsatz 2 a -->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>a)</num>
+                                        <content>
+                                            <p>speziell als Teil eines anderen Gerätetyps, der vom
+                                                Geltungsbereich dieses Gesetzes ausgenommen ist oder
+                                                nicht in den Geltungsbereich dieses Geset- zes
+                                                fällt, konzipiert und darin eingebaut sind und</p>
+                                        </content>
+                                    </division>
+                                    <!-- Teilsatz 2 b -->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>a)</num>
+                                        <content>
+                                            <p>ihre Funktion nur als Teil dieses anderen Gerätetyps
+                                                erfüllen können,</p>
+                                        </content>
+                                    </division>
+                                </subclause>
+                                <!-- Teilsatz 3 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>3.</num>
+                                    <content>
+                                        <p>Glühlampen,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 4 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>4.</num>
+                                    <content>
+                                        <p>Ausrüstungsgegenstände für einen Einsatz im Weltraum,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 5 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>5.</num>
+                                    <content>
+                                        <p>ortsfeste industrielle Großwerkzeuge,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 6 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>6.</num>
+                                    <content>
+                                        <p>ortsfeste Großanlagen; dieses Gesetz gilt jedoch für
+                                            Geräte, die nicht speziell als Teil dieser Anlagen
+                                            konzipiert und darin eingebaut sind,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 7 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>7.</num>
+                                    <content>
+                                        <p>Verkehrsmittel zur Personen- und Güterbeförderung; dieses
+                                            Gesetz gilt jedoch für elektrische Zweiradfahrzeuge, für
+                                            die eine Typgenehmigung nicht erforderlich ist,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 8 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>8.</num>
+                                    <content>
+                                        <p>bewegliche Maschinen,</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 9 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>9.</num>
+                                    <content>
+                                        <p>Geräte, die ausschließlich zu Zwecken der Forschung und
+                                            Entwicklung speziell ent- worfen wurden und nur auf
+                                            zwischenbetrieblicher Ebene bereitgestellt werden,
+                                            und</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 10 -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>10.</num>
+                                    <content>
+                                        <p>medizinische Geräte und In-vitro-Diagnostika, bei denen
+                                            jeweils zu erwarten ist, dass diese vor Ablauf ihrer
+                                            Lebensdauer infektiös werden, und aktive implantierbare
+                                            medi- zinische Geräte.</p>
+                                    </content>
+                                </subclause>
+                            </clause>
+
+                        </alinea>
+                        <!-- Absatz 3 -->
+                        <alinea>
+                            <num>(3)</num>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Soweit dieses Gesetz keine abweichenden Vorschriften enthält,
+                                        sind das Kreislaufwirt- schaftsgesetz mit Ausnahme von § 17
+                                        Absatz 4 und § 54, und diejenigen Rechtsverordnun- gen in
+                                        der jeweils geltenden Fassung anzuwenden, die auf der
+                                        Grundlage des Kreislaufwirt- schaftsgesetzes oder des bis
+                                        zum 1. Juni 2012 geltenden Kreislaufwirtschafts- und
+                                        Abfallge- setzes erlassen wurden.</p>
+                                </content>
+                            </clause>
+                            <!-- Satz 2 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Die §§ 27, 47 Absatz 1 bis 6, § 50 Absatz 3, § 59 Absatz 1
+                                        Satz 1 und die §§ 62 und 66 des Kreislaufwirtschaftsgesetzes
+                                        gelten entsprechend. Bestehen auf Grund anderer
+                                        Rechtsvorschriften besondere Anforderungen an die
+                                        Bewirtschaftung von Altgeräten oder an die
+                                        Produktkonzeption, bleiben diese Anforderungen unberührt.
+                                        Die Nachweispflichten nach § 50 Absatz 1 des
+                                        Kreislaufwirtschaftsgesetzes gelten nicht für die
+                                        Überlassung von Altgeräten an Einrichtungen zur Sammlung und
+                                        Erstbehandlung von Altge- räten.</p>
+                                </content>
+                            </clause>
+                        </alinea>
+                    </paragraph>
+                    <!-- § 3 -->
+                    <paragraph>
+                        <num>§ 3</num>
+                        <heading>Begriffsbestimmungen</heading>
+                        <alinea>
+                            <num/>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzMitUntergliederung">
+                                <intro>
+                                    <p>Im Sinne dieses Gesetzes bezeichnet der Ausdruck</p>
+                                </intro>
+                                <!-- Teilsatz 1 -->
+                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
+                                    <num>1.</num>
+                                    <intro>
+                                        <p>Elektro- und Elektronikgeräte: Geräte, die für den
+                                            Betrieb mit Wechselspannung von höchstens 1 000 Volt
+                                            oder Gleichspannung von höchstens 1 500 Volt ausgelegt
+                                            sind und </p>
+                                    </intro>
+                                    <!-- Teilsatz 1 a)-->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>a)</num>
+                                        <content>
+                                            <p>die zu ihrem ordnungsgemäßen Betrieb von elektrischen
+                                                Strömen oder elekt- romagnetischen Feldern abhängig
+                                                sind, oder</p>
+                                        </content>
+                                    </division>
+                                    <!-- Teilsatz 1 b)-->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>b)</num>
+                                        <content>
+                                            <p> der Erzeugung, Übertragung und Messung von
+                                                elektrischen Strömen und elekt- romagnetischen
+                                                Feldern dienen; </p>
+                                        </content>
+                                    </division>
+                                </subclause>
+                                <!-- Teilsatz 2. -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>2.</num>
+                                    <content>
+                                        <p> Geräteart: Einteilung von Geräten innerhalb einer
+                                            Kategorie, die hinsichtlich der Art ihrer Nut- zung oder
+                                            ihrer Funktionen vergleichbare Merkmale aufweisen; </p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 3. -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>1.</num>
+                                    <content>
+                                        <p> Altgeräte: Elektro- und Elektronikgeräte, die Abfall im
+                                            Sinne des § 3 Absatz 1 Satz 1 des Kreis-
+                                            laufwirtschaftsgesetzes sind, einschließlich aller
+                                            Bauteile, Unterbaugruppen und Ver- brauchsmaterialien,
+                                            die zum Zeitpunkt des Eintritts der Abfalleigenschaft
+                                            Teil des Alt- gerätes sind; </p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 4. -->
+                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
+                                    <num>4.</num>
+                                    <intro>
+                                        <p>historische Altgeräte:</p>
+                                    </intro>
+                                    <!-- Teilsatz 4 a)-->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>a)</num>
+                                        <content>
+                                            <p>Altgeräte, die vor dem 13. August 2005 in Verkehr
+                                                gebracht wurden,</p>
+                                        </content>
+                                    </division>
+                                    <!-- Teilsatz 4 b)-->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>b)</num>
+                                        <content>
+                                            <p> Photovoltaikmodule und Leuchten aus privaten
+                                                Haushalten, die Altgeräte sind und vor dem .
+                                                [einsetzen: Datum Inkrafttreten des Gesetzes] in
+                                                Verkehr ge- bracht wurden, oder</p>
+                                        </content>
+                                    </division>
+                                    <!-- Teilsatz 4 c)-->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>c)</num>
+                                        <content>
+                                            <p>Altgeräte, die vor dem 14. August 2018 in Verkehr
+                                                gebracht wurden oder wer- den, soweit sie vom
+                                                Anwendungsbereich dieses Gesetzes nach § 47 nicht
+                                                er- fasst sind;</p>
+                                        </content>
+                                    </division>
+                                </subclause>
+                                <!-- Teilsatz 5. -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>5.</num>
+                                    <content>
+                                        <p>Altgeräte aus privaten Haushalten: Altgeräte aus privaten
+                                            Haushaltungen im Sinne des Kreislaufwirtschaftsgesetzes
+                                            so- wie Altgeräte aus sonstigen Herkunftsbereichen,
+                                            soweit die Beschaffenheit der dort anfallenden Altgeräte
+                                            mit der Beschaffenheit von in privaten Haushaltungen
+                                            anfallen- den Altgeräten vergleichbar ist; Altgeräte,
+                                            die sowohl von privaten Haushalten als auch von anderen
+                                            Nutzern als privaten Haushalten genutzt werden, gelten
+                                            als Altge- räte aus privaten Haushalten; </p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 6. -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>6.</num>
+                                    <content>
+                                        <p>Anbieten: das im Rahmen einer gewerbsmäßigen Tätigkeit
+                                            auf den Abschluss eines Kaufver- trages gerichtete
+                                            Präsentieren oder öffentliche Zugänglichmachen von
+                                            Elektro- und Elektronikgeräten; dies umfasst auch die
+                                            Aufforderung, ein Angebot abzugeben; </p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 7. -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>7.</num>
+                                    <content>
+                                        <p>Bereitstellung auf dem Markt: jede entgeltliche oder
+                                            unentgeltliche Abgabe eines Elektro- und
+                                            Elektronikgerätes zum Vertrieb, Verbrauch oder zur
+                                            Verwendung im Geltungsbereich dieses Gesetzes im Rahmen
+                                            einer gewerbsmäßigen Tätigkeit;</p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 8. -->
+                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                    <num>8.</num>
+                                    <content>
+                                        <p>Inverkehrbringen: die erstmalige Bereitstellung eines
+                                            Elektro- und Elektronikgerätes auf dem Markt im
+                                            Geltungsbereich dieses Gesetzes; </p>
+                                    </content>
+                                </subclause>
+                                <!-- Teilsatz 9. -->
+                                <subclause xsi:type="teilsatzNummerMitUntergliederung">
+                                    <num>9.</num>
+                                    <intro>
+                                        <p>Hersteller: jede natürliche oder juristische Person oder
+                                            Personengesellschaft, die unabhängig von der
+                                            Verkaufsmethode, einschließlich der
+                                            Fernkommunikationsmittel im Sinne des § 312c Absatz 2
+                                            des Bürgerlichen Gesetzbuchs,</p>
+                                    </intro>
+                                    <!-- Teilsatz 1 a)-->
+                                    <division xsi:type="teilsatzBuchstabeMitUntergliederung">
+                                        <num>a)</num>
+                                        <intro>
+                                            <p>Elektro- und Elektronikgeräte</p>
+                                        </intro>
+                                        <!-- Teilsatz 1 a aa) -->
+                                        <subdivision xsi:type="teilsatzDoppelbuchstabeOhneUntergliederung">
+                                            <num>aa)</num>
+                                            <content>
+                                                <p>unter ihrem Namen oder Warenzeichen herstellt und
+                                                  innerhalb des Gel- tungsbereiches dieses Gesetzes
+                                                  anbietet oder</p>
+                                            </content>
+                                        </subdivision>
+                                        <!-- Teilsatz 1 a bb) -->
+                                        <subdivision xsi:type="teilsatzDoppelbuchstabeOhneUntergliederung">
+                                            <num>bb)</num>
+                                            <content>
+                                                <p>konzipieren oder herstellen lässt und sie unter
+                                                  ihrem Namen oder Waren- zeichen innerhalb des
+                                                  Geltungsbereiches dieses Gesetzes anbietet,</p>
+                                            </content>
+                                        </subdivision>
+                                    </division>
+                                    <!-- Teilsatz 1 b) -->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>b)</num>
+                                        <content>
+                                            <p>Elektro- und Elektronikgeräte anderer Anbieter unter
+                                                ihrem eigenen Namen o- der Warenzeichen im
+                                                Geltungsbereich dieses Gesetzes anbietet oder ge-
+                                                werbsmäßig weiterverkauft, wobei der Anbieter oder
+                                                Weiterverkäufer dann nicht als Hersteller anzusehen
+                                                ist, wenn der Name oder das Warenzeichen des Her-
+                                                stellers gemäß Buchstabe a auf dem Gerät erscheint,
+                                            </p>
+                                        </content>
+                                    </division>
+                                    <!-- Teilsatz 1 c) -->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>c)</num>
+                                        <content>
+                                            <p>erstmals aus einem anderen Mitgliedstaat der
+                                                Europäischen Union oder aus ei- nem Drittland
+                                                stammende Elektro- und Elektronikgeräte auf dem
+                                                Markt im Gel- tungsbereich dieses Gesetzes anbietet
+                                                oder</p>
+                                        </content>
+                                    </division>
+                                    <!-- Teilsatz 1 d) -->
+                                    <division xsi:type="teilsatzBuchstabeOhneUntergliederung">
+                                        <num>d)</num>
+                                        <content>
+                                            <p> Elektro- und Elektronikgeräte mit Hilfe der
+                                                Fernkommunikationstechnik direkt privaten Haushalten
+                                                oder anderen Nutzern als privaten Haushalten im Gel-
+                                                tungsbereich dieses Gesetzes anbietet und in einem
+                                                anderen Mitgliedstaat der Europäischen Union oder
+                                                einem Drittland niedergelassen ist; </p>
+                                        </content>
+                                    </division>
+                                </subclause>
+                                <!-- Ausalssen der Nummern 10 - 25 -->
+                            </clause>
+                        </alinea>
+                    </paragraph>
+                </section>
+                <!-- Abschnitt 2 -->
+                <section xsi:type="abschnittParagraph">
+                    <num>Abschnitt 2</num>
+                    <heading>Pflichten beim Inverkehrbringen von Elektro- und
+                        Elektronikgeräten</heading>
+                    <!-- $ 4 -->
+                    <paragraph>
+                        <num>$ 1</num>
+                        <heading>Produktkonzeption</heading>
+                        <!-- Abatz 1 -->
+                        <alinea>
+                            <num>(1)</num>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p> Hersteller haben ihre Elektro- und Elektronikgeräte
+                                        möglichst so zu gestalten, dass ins- besondere die
+                                        Wiederverwendung, die Demontage und die Verwertung von
+                                        Altgeräten, ihren Bauteilen und Werkstoffen berücksichtigt
+                                        und erleichtert werden. Elektro- und Elektronikge- räte, die
+                                        vollständig oder teilweise mit Batterien oder Akkumulatoren
+                                        betrieben werden kön- nen, sind möglichst so zu gestalten,
+                                        dass Batterien und Akkumulatoren durch Endnutzer problemlos
+                                        entnommen werden können. </p>
+                                </content>
+                            </clause>
+                            <!-- Satz 2 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p> Sind Batterien oder Akkumulatoren nicht problemlos durch den
+                                        Endnutzer entnehmbar, sind die Elektro- und Elektronikgeräte
+                                        so zu gestalten, dass die Batterien und Akkumulatoren
+                                        problemlos durch vom Hersteller unabhängiges Fach- personal
+                                        entnommen werden können.</p>
+                                </content>
+                            </clause>
+                        </alinea>
+                        <!-- Absatz 2 -->
+                        <alinea>
+                            <num>(2)</num>
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Die Hersteller sollen die Wiederverwendung nicht durch
+                                        besondere Konstruktionsmerk- male oder Herstellungsprozesse
+                                        verhindern, es sei denn, dass die Konstruktionsmerkmale
+                                        rechtlich vorgeschrieben sind oder die Vorteile dieser
+                                        besonderen Konstruktionsmerkmale oder Herstellungsprozesse
+                                        überwiegen, beispielsweise im Hinblick auf den Gesundheits-
+                                        schutz, den Umweltschutz oder auf
+                                        Sicherheitsvorschriften.</p>
+                                </content>
+                            </clause>
+                        </alinea>
+                        <!-- Absatz 3 -->
+                        <alinea>
+                            <num>(3)</num>
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Absatz 1 Satz 2 und 3 gilt nicht für Elektro- und
+                                        Elektronikgeräte, in denen aus Gründen der Sicherheit, der
+                                        Leistung, aus medizinischen Gründen oder aus Gründen der
+                                        Vollständig- keit von Daten eine ununterbrochene
+                                        Stromversorgung notwendig und eine ständige Verbin- dung
+                                        zwischen dem Gerät und der Batterie oder dem Akkumulator
+                                        erforderlich ist.</p>
+                                </content>
+                            </clause>
+                        </alinea>
+                    </paragraph>
+                    <!-- $ 5 -->
+                    <paragraph>
+                        <num>§ 5</num>
+                        <heading>Einrichten der Gemeinsamen Stelle</heading>
+                        <!-- Absatz 1 -->
+                        <alinea>
+                            <num>(1)</num>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p> Die Hersteller oder deren Bevollmächtigte sind verpflichtet,
+                                        eine Gemeinsame Stelle ein- zurichten. </p>
+                                </content>
+                            </clause>
+                        </alinea>
+                        <!-- Absatz 2 -->
+                        <alinea>
+                            <num>(2)</num>
+                            <!-- Satz 1 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Ist die Gemeinsame Stelle nicht eingerichtet oder nimmt die
+                                        Gemeinsame Stelle ihre Auf- gaben nach § 31 Absatz 5 Satz 1
+                                        oder Absatz 7 Satz 1 und 3 nicht wahr, ist jeder Hersteller
+                                        oder dessen Bevollmächtigter verpflichtet, den
+                                        öffentlich-rechtlichen Entsorgungsträgern die Kosten für die
+                                        Sammlung, Sortierung und Entsorgung seiner Altgeräte zu
+                                        erstatten. </p>
+                                </content>
+                            </clause>
+                            <!-- Satz 2 -->
+                            <clause xsi:type="satzOhneUntergliederung">
+                                <content>
+                                    <p>Die nach Landesrecht zuständige Behörde setzt die Kosten
+                                        durch Verwaltungsakt fest.</p>
+                                </content>
+                            </clause>
+                        </alinea>
+                    </paragraph>
+                </section> 
+                
+                <!-- Beispiel für das Einbinden von Anlagen zu einem Regelungstext in Mantelform -->
+                <componentRef src="regelungsentwurf_01_regelungstext_anlage_01.xml" showAs="Anlage 1"/>
+                <componentRef src="regelungsentwurf_01_regelungstext_anlage_x.xml" showAs="Anlage X"/>             
+                
+            </hcontainer>
+            <!-- Artikel 2: Hauptänderung -->
+            <hcontainer name="" xsi:type="artikelHauptaenderung">
+                <num>Artikel 2</num>
+                <heading>Änderung des Abfallverbingungsgesetzes</heading>
+                <!-- Änderungssabsatz, der nur aus einem Änderungsbefehl besteht -->
+                <alinea>
+                    <point xsi:type="listenelementAenderungsbefehl">
+                        <num/>
+                        <content>
+                            <p>
+                                <mod eId="mod_1" xsi:type="aenderungsbefehlNeufassung"> Dem <ref href="">§ 11 Absatz 2
+                                        des Abfallverbringungsgesetzes vom 19. Juli1 2007 (BGBl. I
+                                        S. 1462), das zuletzt durch Artikel 4 Absatz 34 des Gesetzes
+                                        vom 07. August 2013 (BGBl. I S. 3154) geändert worden
+                                        ist</ref>, wird folgender Satz angefügt: "<quotedText> Bei
+                                        den Kontrollen nach Satz 1 und 2 sind § 23 Absatz 4 und
+                                        Absatz 5 Satz 1 des Elektro- und Elektronikgerätegesetzes
+                                        vom . (BGBl. I S. .) [Einsetzen: Ausfertigungs- datum und
+                                        Fundstelle des Gesetzes] anzuwenden.“ </quotedText>" </mod>
+                            </p>
+                        </content>
+                    </point>
+                </alinea>
+            </hcontainer>
+            <!-- Artikel 3: Hauptänderung -->
+            <hcontainer name="" xsi:type="artikelHauptaenderung">
+                <num>Artikel 3</num>
+                <heading>Änderung des Kreislaufwirtschaftsgesetzes</heading>
+                <alinea>
+                    <list>
+                        <num/>
+                        <intro>
+                            <p>Das <ref href="">Kreislaufwirtschaftsgesetz vom 24. Februar 2012 (BGBl. I S.
+                                    212), das durch § 44 Ab- satz 4 des Gesetzes vom 22. Mai 2013
+                                    (BGBl. I S. 1324) geändert worden ist</ref>, wird wie folgt
+                                geändert:</p>
+                        </intro>
+                        <!-- Nummer 1 -->
+                        <point xsi:type="listenelementAenderungsbefehl">
+                            <num>1.</num>
+                            <content>
+                                <p>
+                                    <mod xsi:type="aenderungsbefehlErsetzen">In <ref href="">§ 47 Absatz 9
+                                            Satz 1</ref>wird die Angabe "<quotedText>Absatz
+                                            6</quotedText>" durch die Angabe "<quotedText>Absatz
+                                            8</quotedText>" ersetzt. </mod>
+                                </p>
+                            </content>
+                        </point>
+                        <!-- Nummer 2 -->
+                        <list xsi:type="listenelementListeAenderungsbefehle">
+                            <num>2.</num>
+                            <intro>
+                                <p><ref href="">§ 53 Absatz 6</ref> wird wie folgt geändert:</p>
+                            </intro>
+                            <!-- Nummer 2 a) -->
+                            <point xsi:type="listenelementAenderungsbefehl">
+                                <num>a)</num>
+                                <content>
+                                    <p>
+                                        <mod xsi:type="aenderungsbefehlStreichen">In <ref href="">Nummer
+                                                3</ref> wird das Wort
+                                                "<quotedText>sowie</quotedText>" gestrichen. </mod>
+                                    </p>
+                                </content>
+                            </point>
+                            <!-- Nummer 2 b) -->
+                            <point xsi:type="listenelementAenderungsbefehl">
+                                <num>b)</num>
+                                <content>
+                                    <p>
+                                        <mod xsi:type="aenderungsbefehlErsetzen"> In <ref href="">Nummer
+                                                4</ref> wird der Punkt am Ende durch ein Komma
+                                            ersetzt.
+                                        </mod>
+                                    </p>
+                                </content>
+                            </point>
+                            <!-- Nummer 2 c) -->
+                            <point xsi:type="listenelementAenderungsbefehl">
+                                <num>c)</num>
+                                <content>
+                                    <p>
+                                        <mod xsi:type="aenderungsbefehlNeufassung">Nach der
+                                                <ref href="">Nummer 4</ref> wird folgende Nummer 5 angefügt: "<quotedStructure>
+                                                <subclause xsi:type="teilsatzNummerOhneUntergliederung">
+                                                  <num>5.</num>
+                                                  <content>
+                                                  <p>anzuordnen, dass bei der Beförderung von
+                                                  Abfällen geeignete Unterlagen zum Zweck der
+                                                  Überwachung mitzuführen sind.</p>
+                                                  </content>
+                                                </subclause>
+                                            </quotedStructure>" </mod>
+                                    </p>
+                                </content>
+                            </point>
+                        </list>
+                        <!-- Nummer 3 -->
+                        <list xsi:type="listenelementListeAenderungsbefehle">
+                            <num>3.</num>
+                            <intro>
+                                <p><ref href="">§ 69 Absatz 2 wird wie folgt geändert:</ref></p>
+                            </intro>
+                            <!-- Nummer 3 a)-->
+                            <point xsi:type="listenelementAenderungsbefehl">
+                                <num>a)</num>
+                                <content>
+                                    <p>
+                                        <mod xsi:type="aenderungsbefehlErsetzen">In <ref href="">Nummer
+                                                1</ref> wird die Angabe "<quotedText>§ 18 Absatz 1
+                                                Satz 1</quotedText>" durch die Angabe "<quotedText>§
+                                                18 Absatz 1</quotedText>" ersetzt. </mod>
+                                    </p>
+                                </content>
+                            </point>
+                            <!-- Nummer 3 b)-->
+                            <point xsi:type="listenelementAenderungsbefehl">
+                                <num>b)</num>
+                                <content>
+                                    <p>
+                                        <mod xsi:type="aenderungsbefehlErsetzen"> In <ref href=""
+                                                >Nummer 15</ref> werden die Wörter „<quotedText>§ 53
+                                                Absatz 6 Nummer 1, 2 oder Nummer 4, § 54 Absatz 7
+                                                Nummer 1, 2 oder Nummer 4</quotedText>“ durch die
+                                            Wörter „<quotedText>§ 53 Absatz 6 Nummer 1, 2, 4 oder
+                                                Nummer 5, § 54 Absatz 7 Nummer 1, 2, 4 oder Nummer
+                                                5</quotedText>“ ersetzt. </mod>
+                                    </p>
+                                </content>
+                            </point>
+                        </list>
+                    </list>
+                </alinea>
+            </hcontainer>
+            <!-- Artikel 4: Folgeänderungen -->
+            <hcontainer name="" xsi:type="artikelFolgeaenderung">
+                <num>Artikel 4</num>
+                <heading>Folgeänderungen</heading>
+                <!-- Absatz 1 -->
+                <alinea>
+                    <num>(1)</num>
+                    <point xsi:type="listenelementAenderungsbefehl">
+                        <num/>
+                        <content>
+                            <p>
+                                <mod xsi:type="aenderungsbefehlErsetzen">In <ref href="">§ 5 Absatz
+                                        3 des Umweltstatistikgesetzes vom 16. August 2005 (BGBl. I
+                                        S. 2446), das zuletzt durch Artikel 5 Absatz 1 des Gesetzes
+                                        vom 24. Februar 2012 (BGBl. I S. 212) geändert worden
+                                        ist</ref>, werden die Angabe „<quotedText>16. März 2005
+                                        (BGBl. I S. 762)</quotedText>“ durch die Angabe
+                                        „<quotedText>. (BGBl. I S. .) [Einsetzen: Ausfertigungsdatum
+                                        und Fundstelle des Gesetzes]</quotedText>“ ersetzt. </mod>
+                            </p>
+                        </content>
+                    </point>
+                </alinea>
+                <!-- Absatz 2 -->
+                <alinea>
+                    <num>(2)</num>
+                    <point xsi:type="listenelementAenderungsbefehl">
+                        <num/>
+                        <content>
+                            <p>
+                                <mod xsi:type="aenderungsbefehlStreichen"> Die <ref href=""
+                                        >Verordnung zur Bestimmung der für die Verfolgung und
+                                        Ahndung von Ordnungswid- rigkeiten nach § 23 Abs. 1 Nr. 2,
+                                        4, 8 und 9 des Elektro- und Elektronikgerätegesetzes zu-
+                                        ständigen Behörden vom 10. Juli 2006 (BGBl. I S. 1453)</ref>
+                                    wird aufgehoben. </mod>
+                            </p>
+                        </content>
+                    </point>
+                </alinea>
+                <!-- Absatz 3 -->
+                <alinea>
+                    <num>(3)</num>
+                    <list>
+                        <num/>
+                        <intro>
+                            <p>Die <ref href="">Kostenverordnung zum Elektro- und
+                                    Elektronikgerätegesetz vom 06. Juli 2005, die zuletzt durch
+                                    Artikel 1 der Verordnung vom 28. November 2013 (BGBl. I S. 4094)
+                                    geändert worden ist </ref>, wird wie folgt geändert</p>
+                        </intro>
+                        <!-- Absatz 3 Nummer 1 -->
+                        <point xsi:type="listenelementAenderungsbefehl">
+                            <num>1.</num>
+                            <content>
+                                <p>
+                                    <mod xsi:type="aenderungsbefehlErsetzen"> In <ref href="">§ 1
+                                            Absatz 1 Satz 1</ref> wird die Angabe „<quotedText>§ 16
+                                            Abs. 1</quotedText>“ durch die Angabe „<quotedText>§
+                                            36</quotedText>" und die Angabe „<quotedText>§ 17 Abs.
+                                            1</quotedText>“ durch die Angabe „<quotedText> § 40
+                                            Absatz 1</quotedText>“ ersetzt. </mod>
+                                </p>
+                            </content>
+                        </point>
+                        <!-- Absatz 3 Nummer 2 -->
+                        <list xsi:type="listenelementListeAenderungsbefehle">
+                            <num>2.</num>
+                            <intro>
+                                <p><ref href="">§ 2</ref> wird wie folgt geändert:</p>
+                            </intro>
+                            <!-- Absatz Nummer 2 a) -->
+                            <point xsi:type="listenelementAenderungsbefehl">
+                                <num/>
+                                <content>
+                                    <p>
+                                        <mod xsi:type="aenderungsbefehlErsetzen"> In <ref href=""
+                                                >Absatz 1 Satz 1</ref> wird die Angabe
+                                                „<quotedText>16 Abs. 1</quotedText>“ durch die
+                                            Angabe „<quotedText>§ 36</quotedText>“ und die Angabe
+                                                „<quotedText>§ 17 Abs. 1</quotedText>“ durch die
+                                            Angabe „<quotedText>§ 40 Absatz 1</quotedText>“ ersetzt.
+                                        </mod>
+                                    </p>
+                                </content>
+                            </point>
+                            <!-- Absatz Nummer 2 b) -->
+                            <list>
+                                <num>b)</num>
+                                <intro>
+                                    <p><ref href="">Absatz 3</ref> wird wie folgt geändert:</p>
+                                </intro>
+                                <!-- Absatz Nummer 2 b aa) -->
+                                <point>
+                                    <num/>
+                                    <content>
+                                        <p>
+                                            <mod xsi:type="aenderungsbefehlErsetzen"> In <ref
+                                                  href="">Satz 5</ref> wird die Angabe
+                                                  „<quotedText>§ 13 Abs. 1</quotedText>“ durch die
+                                                Angabe „<quotedText>§ 27 Absatz 1</quotedText>“
+                                                ersetzt. </mod>
+                                        </p>
+                                    </content>
+                                </point>
+                                <!-- Absatz Nummer 2 b bb) -->
+                                <point>
+                                    <num/>
+                                    <content>
+                                        <p>
+                                            <mod xsi:type="aenderungsbefehlErsetzen"> In <ref
+                                                  href="">Satz 6</ref> wird die Angabe
+                                                  „<quotedText>§ 13</quotedText>“ durch die Angabe
+                                                  „<quotedText>§ 27</quotedText>“ ersetzt. </mod>
+                                        </p>
+                                    </content>
+                                </point>
+                            </list>
+                        </list>
+                        <!-- Absatz 3 Nummer 3 -->
+                        <point>
+                            <num>3.</num>
+                            <content>
+                                <p>
+                                    <mod xsi:type="aenderungsbefehlErsetzen"> Im <ref href=""
+                                            >Anhang 1 Nummer 1.04. Buchstabe f</ref> wird in der
+                                        Spalte „<quotedText>Gebührentatbestand</quotedText>“ die
+                                        Angabe „<quotedText>§ 6 Absatz 3 Satz 2</quotedText>“ durch
+                                        die Angabe „<quotedText>§ 7 Absatz 3 Satz 1</quotedText>“
+                                        ersetzt. </mod>
+                                </p>
+                            </content>
+                        </point>
+                    </list>
+                </alinea>
+            </hcontainer>
+            <!-- Artikel 5: Geltungszeitregel -->
+            <hcontainer name="" xsi:type="artikelGeltungszeitregel">
+                <num>Artikel 5</num>
+                <heading>Inkrafttreten, Außerkrafttreten</heading>
+                <alinea>
+                    <num/>
+                    <!-- Satz 1 -->
+                    <clause xsi:type="satzOhneUntergliederung">
+                        <content>
+                            <p>Dieses Gesetz tritt am Tag nach der Verkündung in Kraft.</p>
+                        </content>
+                    </clause>
+                    <!-- Satz 2 -->
+                    <clause xsi:type="satzOhneUntergliederung">
+                        <content>
+                            <p> Gleichzeitig tritt das <ref href="">Elektro- und
+                                    Elektronikgerätegesetz vom 16. März 2005 (BGBl. I S. 762), das
+                                    zuletzt durch Artikel 14 des Gesetzes vom 20. September 2013
+                                    (BGBl. I S. 3642) geändert worden ist</ref>, außer Kraft. </p>
+                        </content>
+                    </clause>
+                </alinea>
+            </hcontainer>
+        </body>
+        <!-- Schluss -->
+        <conclusions>
+            <formula name="" xsi:type="schlussformelGesetz">
+                <p xsi:type="verkuendungBundesgesetzblatt"></p>
+            </formula>
+        </conclusions>
+    </bill>
+</akomaNtoso>

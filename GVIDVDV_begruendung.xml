@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ##############################################################################
+    
+	Februar 2020
+	
+	Nicht normatives Beispiel zur Umsetzung eines Regelungsentwurfs in LegalDocML.de.
+    Textkürzungen und -auslassungen gegenüber dem Originaldokument dienen der besseren Übersichtlichkeit in der vorliegenden XML-Instanz. 
+    
+    Version:
+    LegalDocML.de 1.0
+    
+    Art des Regelungsentwurfs: 
+    Mantelgesetz inklusive Stammgesetz inklusive Änderungsnovelle 
+        
+    Kurztitel und amtliche Abkürzung:
+    Elektro-  und Elektronikgerätegesetz - ElektroG
+    
+############################################################################## -->
+
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd"
+    xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+    <doc name="begruendung" xsi:type="begruendung">
+        <!-- Begründung -->
+        <meta>
+            <identification source="#BMU">
+                <FRBRWork>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/!begruendung"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/!begruendung"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRcountry value="de"/>
+                    <FRBRnumber value="a01fc9bd"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!begruendung"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!begruendung"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRversionNumber value=""/>
+                    <FRBRlanguage language="deu"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!begruendung.xml"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!begruendung.xml"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                </FRBRManifestation>
+            </identification>
+        </meta>
+        <!-- Dokumentenkopf Begründung -->
+        <preface>
+            <longTitle>
+                <p>Begründung</p>
+            </longTitle>
+        </preface>
+        <!-- Hauptteil Begründung -->
+        <mainBody xsi:type="begruendungHauptteil">
+            <!-- Allgemeiner Teil -->
+            <tblock xsi:type="allgemeinerTeil" title="allgemeinerTeil">
+                <num>A.</num>
+                <heading>Allgemeiner Teil</heading>
+                <!-- Zielsetzung und Notwendigkeit -->
+                <tblock xsi:type="begruendungsabschnittZielsetzungUndNotwendigkeit"
+                    title="zielsetzungUndNotwendigkeit">
+                    <num>I.</num>
+                    <heading>Zielsetzung und Notwendigkeit der Regelungen</heading>
+                    <p>Zum 13. August 2005 trat das Gesetz über das Inverkehrbringen, die Rücknahme
+                        und die umweltverträgliche Entsorgung von Elektro- und Elektronikgeräten
+                        (Elektro- und Elektronikgerätegesetz – ElektroG) in Kraft, das die
+                        europäische Richtlinie 2002/96/EG über des Euro- päischen Parlaments und des
+                        Rates vom 27. Januar 2003 über Elektro- und Elektronik- Altgeräte umgesetzt
+                        hat. Das ElektroG legt konkrete Pflichten für die Hersteller der Produkte,
+                        den Handel, die Kommunen, die Besitzer von Elektro- und
+                        Elektronik-Altgeräten (EAG) sowie die Entsorger fest. Im Rahmen der den
+                        Herstellern übertragenen Produktverantwortung sind diese für die Rücknahme
+                        der EAG verantwortlich. Dies beinhaltet insbesondere auch die Organisation
+                        der Abholung der EAG bei kommunalen Sammel- bzw. Übergabestellen und ihre
+                        ordnungsgemäße Entsorgung. Die öffentlich-rechtlichen Entsorgungsträger
+                        (örE) hingegen sind für die Einrichtung und den Betrieb der Sammelstellen
+                        zuständig. Die Bürgerinnen und Bürger sind nach dem ElektroG verpflichtet,
+                        ihre EAG einer vom Siedlungsabfall getrennten Erfassung zuzuführen. Die
+                        Abgabe der EAG bei den örE ist seit Inkrafttreten des ElektroG kostenlos.
+                        Die mit dem ElektroG im Sinne der ökologischen Zielsetzung und der
+                        Gewährleistung fairer Wettbewerbsbedingungen neu geschaffenen Strukturen
+                        haben sich grundsätzlich als effizient erwiesen.</p>
+                    <p>Die nationale Entwicklung des Abfallrechts im Bereich der EAG-Entsorgung wird
+                        durch das europäische Abfallrecht geprägt. Wegen wesentlicher Änderungen
+                        wurde am 04. Juli 2012 eine Neufassung der Elektro-Altgeräte-Richtlinie
+                        durch die Richtlinie 2012/19/EU des Europäischen Parlaments und des Rates
+                        über Elektro- und Elektronik-Altgeräte (WEEE- Richtlinie) verabschiedet.
+                        Wesentliche Elemente dieser neu gefassten Richtlinie sind die</p>
+
+
+                    <ul>
+                        <li>Ausweitung des Anwendungsbereiches,</li>
+                        <li>Einführung eines Bevollmächtigten,</li>
+                        <li>Verpflichtung des Handels zur Rücknahme von EAG,</li>
+                        <li>stufenweise Anhebung der Sammel- und Verwertungs- und Recyclingziele
+                            sowie</li>
+                        <li>die Aufnahme detaillierter Regelungen zur Verbringung von EAG.</li>
+                    </ul>
+
+
+                    <p>Die Richtlinie sieht eine Umsetzung in nationales Recht bis zum 14. Februar
+                        2014 vor.</p>
+                    <p>Der Gesetzentwurf dient zum einen der Umsetzung der WEEE-Richtlinie. Zum
+                        anderen sind Änderungen vorgesehen, die die Begrifflichkeiten des ElektroG
+                        an das neue Kreislaufwirtschaftsgesetz anpassen sowie die Erfahrungen aus
+                        der Praxis der Umsetzung des ElektroG seit 2005 aufgreifen. Ziel der
+                        Änderungen ist es, die Effizienz der bestehenden Sammel- und
+                        Entsorgungsstrukturen weiter zu steigern.</p>
+                </tblock>
+                <!-- Wesentlicher Inhalt -->
+                <tblock xsi:type="begruendungsabschnittWesentlicherInhalt"
+                    title="wesentlicherInhalt">
+                    <num>II.</num>
+                    <heading>Wesentlicher Inhalt des Entwurfs</heading>
+                    <p>Der vorliegende Gesetzesentwurf entwickelt die geltenden deutschen Vorgaben
+                        mit Blick auf die Entsorgung von EAG unter weitgehender Übernahme
+                        EU-rechtlicher Rechtsbegriffe fort. Das Konzept der „geteilten
+                        Produktverantwortung“ wird dabei aufrechterhalten. Aufgrund des Umfangs der
+                        vorgenommenen Änderungen in der WEEE-Richtlinie und den sich aus der Praxis
+                        ergebenden, neuen Herausforderungen ist eine umfassende Novellierung des
+                        ElektroG erforderlich. Zur Gewährleistung der erforderlichen Rechts- und
+                        Vollzugssicherheit werden die bewährten Strukturen des bestehenden Gesetzes
+                        beibehalten und durch weitere Elemente ergänzt. Im neuen ElektroG sind
+                        folgende wesentliche Änderungen vorgesehen:</p>
+
+                    <ul>
+                        <li>Der Aufbau und die Struktur des Gesetzes werden im Wesentlichen
+                            beibehalten, in einigen Teilen aber weiter ausdifferenziert, um eine
+                            größere Rechtsklarheit für die betroffenen Akteure zu erreichen. Die
+                            neuen EU-rechtlichen Regelungen werden in die vorhandene Struktur
+                            integriert.</li>
+
+                        <li>Der Anwendungsbereich des ElektroG wird stufenweise erweitert: Mit
+                            Inkrafttreten des ElektroG wird dieser zunächst um Photovoltaikmodule
+                            und Leuchten aus privaten Haushalten ergänzt. Ab dem 15. August 2018
+                            werden alle elektrischen und elektronischen Geräte in den
+                            Anwendungsbereich fallen, es sei denn, sie sind explizit ausgeschlossen.
+                            Mit der Einführung dieses offenen Anwendungsbereiches ist eine
+                            Umstrukturierung der den Anwendungsbereich bestimmenden Kategorien
+                            verbunden.</li>
+
+                        <li>Um die Verfolgung von Ordnungswidrigkeiten effizienter zu gestalten und
+                            die Verpflichtungen für auf dem europäischen Markt tätige Hersteller zu
+                            vereinfachen, wird die Rechtsfigur des Bevollmächtigten geschaffen.
+                            Dieser tritt in die Verpflichtungen des Herstellers ein, sofern dieser
+                            keine Niederlassung im Geltungsbereich dieses Gesetzes hat.</li>
+                        <li>Die Zusammenstellung der Sammelgruppen wird mit Blick auf die
+                            Erfordernisse des Recyclings und die Ausweitung des Anwendungsbereiches
+                            angepasst.</li>
+                        <li>Zur Erhöhung der Transparenz mit Blick auf alle für die Verbraucherinnen
+                            und Verbraucher zur Verfügung stehenden Sammelstellen, werden
+                            Anzeigepflichten für alle sammelnden Akteure eingeführt. Diese Anzeigen
+                            werden zentral bei der zuständigen Behörde gebündelt und veröffentlicht
+                            und den Verbraucherinnen und Verbrauchern somit zugänglich gemacht.</li>
+                        <li>Die Sammlung durch den Handel erfolgte bislang auf freiwilliger Basis.
+                            In Umsetzung der europarechtlichen Vorgaben sieht der Gesetzesentwurf
+                            eine Verpflichtung des Handels zur Rücknahme von EAG vor. Von dieser
+                            Verpflichtung sind sowohl die Rücknahme von EAG beim Neukauf eines
+                            entsprechenden Gerätes als auch unter bestimmten Voraussetzungen ohne
+                            Neukauf umfasst.</li>
+                        <li>Um die Produktverantwortung der Hersteller zu stärken, eine bessere
+                            Planungssicherheit im Hinblick auf die Finanzierung der bestehenden
+                            Strukturen sowie eine größere Transparenz bei den Mengenströmen zu
+                            erreichen, sieht der Gesetzesentwurf konkretisierende Regelungen zur
+                            Eigenvermarktung durch die örE vor.</li>
+                        <li>In Umsetzung der EU-Vorgaben werden die Vorgaben für das Recycling und
+                            die Verwertung stufenweise angehoben. </li>
+                        <li>Um die Sammlung und Entsorgung zukünftig weiter konkretisieren zu
+                            können, sieht der Gesetzesentwurf entsprechende
+                            Verordnungsermächtigungen vor. Auch vor dem Hintergrund zu erwartender
+                            EU-rechtlicher Vorgaben zu den Themen Sammlung, Behandlung, Verbringung
+                            und Wiederverwendung ist dies angezeigt.</li>
+                        <li>Vor dem Hintergrund zukünftig deutlich erweiterter
+                            Berichterstattungspflichten der Mitgliedsstaaten gegenüber der
+                            Europäischen Kommission sowie dem allgemeinen Erfordernis zur Schaffung
+                            größerer Transparenz bei den Mengenströmen werden die
+                            Mitteilungspflichten der betroffenen Akteure erweitert.</li>
+                        <li>Zur Eindämmung illegaler Exporte von EAG sieht der Gesetzesentwurf die
+                            Übernahme der Regelungen der WEEE-Richtlinie zur Verbringung und zur
+                            Abgrenzung zwischen Gebrauchtgeräten und EAG vor. Eine Umkehr der
+                            Beweislastumkehr ist wesentliches Element der Änderungen in diesem
+                            Bereich.</li>
+                    </ul>
+
+                    <p>Daneben sieht der Gesetzesentwurf im Wesentlichen redaktionelle Änderungen im
+                        Kreislaufwirtschaftsgesetz und Anpassungen anderer Rechtsvorschriften an das
+                        neue ElektroG vor.</p>
+                </tblock>
+                <!-- Alternativen -->
+                <tblock xsi:type="begruendungsabschnittAlternativen" title="alternativen">
+                    <num>III.</num>
+                    <heading>Alternativen</heading>
+                    <p>Zur Umsetzung der europäischen Vorgaben der WEEE-Richtlinie bestehen keine
+                        Alternativen.-</p>
+                </tblock>
+                <!-- Regelungskompetenzen (Geetzgebungskompetenzen) -->
+                <tblock xsi:type="begruendungsabschnittRegelungskompetenz"
+                    title="gesetzgebungskompetenz">
+                    <num>IV.</num>
+                    <heading>Gesetzgebungskompetenz</heading>
+                    <p>Die Regelungen des Gesetzesentwurfes betreffen ausschließlich die
+                        Abfallwirtschaft. Nach <ref href="">Artikel 74 Absatz 1 Nummer 24</ref>
+                        Grundgesetz unterfällt das Gebiet der Abfallwirtschaft der konkurrierenden
+                        Gesetzgebungszuständigkeit des Bundes. Nach <ref href="">Artikel 72 Absatz 1
+                            Grundgesetz</ref> haben die Länder im Bereich der konkurrierenden
+                        Gesetzgebung die Befugnis zur Gesetzgebung nur soweit und solange der Bund
+                        nicht von seiner Gesetzgebungszuständig-keit Gebrauch macht. Da <ref href=""
+                            >Artikel 74 Absatz 1 Nummer 24 Grundgesetz</ref> nicht in <ref href=""
+                            >Artikel 72 Absatz 2 Grundgesetz</ref> genannt wird, bedarf es keiner
+                        konkreten Erforderlichkeitsprüfung. </p>
+                </tblock>
+                <!-- Regelungsfolgen (Gsetzesfolgen) -->
+                <tblock xsi:type="begruendungsabschnittRegelungsfolgen" title="gesetzesfolgen">
+                    <num>V.</num>
+                    <heading>Gesetzesfolgen</heading>
+                    <!-- Recht- und Verwaltungsvereinfachung -->
+                    <tblock xsi:type="regelungsfolgenAbschnittRechtsUndVerwaltungsvereinfachung"
+                        title="rechtsUndVerwaltungsvereinfachung">
+                        <num>1.</num>
+                        <heading>Rechts- und Verwaltungsvereinfachung</heading>
+                        <p>Der Gesetzentwurf beinhaltet keine Rechts- oder
+                            Verwaltungsvereinfachung.</p>
+                    </tblock>
+                    <!-- Nachhaltigkeitsaspekte -->
+                    <tblock xsi:type="regelungsfolgenAbschnittNachhaltigkeitsaspekte"
+                        title="nachhaltigkeitsaspekte">
+                        <num>2.</num>
+                        <heading>Nachhaltigkeitsaspekte</heading>
+                        <p>Der Gesetzesentwurf dient der nachhaltigen Entwicklung, da durch diesen
+                            dauerhaft eine ordnungsgemäße und schadlose Verwertung und
+                            gemeinwohlverträgliche Beseitigung von EAG sichergestellt wird. Dieses
+                            ist insbesondere vor dem Hintergrund einer Verkürzung der Lebenszyklen
+                            vieler Elektro- und Elektronikgeräte sowie einer grundsätzlichen Zunahme
+                            dieser Geräte in allen Lebensbereichen von Bedeutung. </p>
+                        <p> Der Gesetzesentwurf hat folgende wesentliche Auswirkungen auf die
+                            Managementregeln 1, 4 und 6 der nationalen Nachhaltigkeitsstrategie der
+                            Bundesregierung (niedergelegt in „Perspektiven für Deutschland“ aus dem
+                            Jahr 2002 und „Für ein nachhaltiges Deutschland – Fortschrittsbericht
+                            2008 zur nationalen Nachhaltigkeitsstrategie“ aus dem Jahr 2008): </p>
+
+                        <ul>
+                            <li> Zu Managementregel 1: Durch die getroffenen Regelungen wird dafür
+                                Sorge getragen, dass die Hersteller im Rahmen ihrer
+                                Produktverantwortung die Kosten für die Entsorgung von EAG
+                                übernehmen. Durch die Verantwortung der Hersteller mit Blick auf die
+                                Finanzierung der Entsorgung auch zukünftig anfallender EAG werden
+                                absehbare Belastungen für kommende Generationen reduziert, da
+                                dauerhaft eine ordnungsgemäße Bewirtschaftung von EAG sichergestellt
+                                ist. </li>
+                            <li> Zu Managementregel 4: Durch die ordnungsgemäße und schadlose
+                                Verwertung und gemeinwohlverträgliche Beseitigung auf der Grundlage
+                                der getroffenen Regelungen werden Gefahren und Risiken für die
+                                menschliche Gesundheit vermieden. </li>
+                            <li> Zu Managementregel 6: Viele Elektro- und Elektronikgeräte enthalten
+                                ressourcenrelevante Rohstoffe, deren Rückgewinnung vor dem
+                                Hintergrund sich verknappender Ressourcen von besonderer Bedeutung
+                                ist. Durch die getrennte Erfassung von EAG und deren sachgerechte
+                                Behandlung und Verwertung leisten die getroffenen Regelungen einen
+                                Beitrag zur Rückgewinnung und somit einer dauerhaften Verfügbarkeit
+                                dieser Rohstoffe. Hierdurch wird die Effizienz der Ressourcennutzung
+                                gesteigert. </li>
+                        </ul>
+
+                    </tblock>
+                    <!-- Haushaltsangaben ohne Erfüllungsaufwand -->
+                    <tblock
+                        xsi:type="regelungsfolgenAbschnittHaushaltsausgabenOhneErfuellungsaufwand"
+                        title="haushaltsausgabenOhneErfuellungsaufwand">
+                        <num>3.</num>
+                        <heading>Haushaltsausgaben ohne Erfüllungsaufwand</heading>
+                        <p>Es sind keine zusätzlichen Haushaltsausgaben ohne Erfüllungsaufwand zu
+                            erwarten.</p>
+                    </tblock>
+                    <!-- Erfüllungsaufwand -->
+                    <tblock xsi:type="regelungsfolgenAbschnittErfuellungsaufwand"
+                        title="erfuellungsaufwand">
+                        <num>4.</num>
+                        <heading>Erfüllungsaufwand</heading>
+                        <p>[.]</p>
+                    </tblock>
+                    <!-- Weitere Kosten -->
+                    <tblock xsi:type="regelungsfolgenAbschnittWeitereKosten" title="weitereKosten">
+                        <num>5.</num>
+                        <heading>Weitere Kosten</heading>
+                        <p> Ob und in welchem Maße eine Überwälzung der Entsorgungskosten in die
+                            Verbraucherpreise erfolgt und insofern weitere Kosten entstehen, ist von
+                            einer Reihe von Einflussfaktoren abhängig, u. a. von der
+                            Wettbewerbsintensität auf den jeweiligen Märkten. Eine Kostenüberwälzung
+                            ist insofern nicht auszuschließen, kann in ihrer Höhe aber nicht
+                            abgeschätzt werden. </p>
+                    </tblock>
+                    <!-- Gleichstellungspolitische Relevanzprüfung -->
+                    <tblock
+                        xsi:type="regelungsfolgenAbschnittGleichstellungspolitischeRelevanzpruefung"
+                        title="gleichstellungspolitischeRelevanzpruefung">
+                        <num>6.</num>
+                        <heading>Gleichstellungspolitische Relevanzprüfung</heading>
+                        <p> Im Zuge der gemäß § 2 der Gemeinsamen Geschäftsordnung der
+                            Bundesministerien (GGO) vorzunehmenden Relevanzprüfung sind unter
+                            Berücksichtigung der unterschiedlichen Lebenssituation von Frauen und
+                            Männer keine Auswirkungen erkennbar, die gleichstellungspolitischen
+                            Zielen zuwiderlaufen. </p>
+                    </tblock>
+                </tblock>
+            </tblock>
+            <!-- Besonderer Teil -->
+            <tblock xsi:type="besondererTeil" title="besondererTeil">
+                <num>B.</num>
+                <heading>Besonderer Teil</heading>
+                <!-- Zu Artikel 1 -->
+                <tblock>
+                    <heading> Zu <ref href="">Artikel 1</ref> (Elekto- und
+                        Elektronikgerätegesetz)</heading>
+                    <p> Artikel 1 enthält ein neues Stammgesetz, welches das bisherige ElektroG
+                        ablöst. Der Geset- zesentwurf ist stärker als das bisherige ElektroG auf den
+                        Ressourcen- und Umweltschutz ausgerichtet. </p>
+                    <!-- Zu Abschnitt 1 -->
+                    <tblock>
+                        <heading>Zu <ref href="">Abschnitt 1</ref> (Allgemeine Vorschriften)</heading>
+                        <p>Der Teil 1 enthält allgemeine Vorschriften, die für das gesamte ElektroG
+                            von Bedeutung sind. Hierzu zählen die abfallwirtschaftlichen Ziele sowie
+                            die Festlegung des Anwendungsbe- reiches und die gesetzlichen
+                            Definitionen.</p>
+                        <!-- Zu § 1 -->
+                        <tblock>
+                            <heading>Zu <ref href="">§ 1</ref> (Abfallwirtschaftliche
+                                Ziele)</heading>
+                            <p> Die Vorschrift entspricht im Wesentlichen § 1 des bisherigen
+                                ElektroG und setzt Artikel 1 der WEEE-Richtlinie um. Satz 1 stellt
+                                klar, dass das ElektroG als Ergänzung zum Kreislaufwirt-
+                                schaftsgesetz zu verstehen ist. Es enthält spezielle Anforderungen
+                                an die Produktverantwor- tung der Hersteller von Elektro- und
+                                Elektronikgeräten. </p>
+                            <p> Die bisherigen abfallwirtschaftlichen Ziele wurden um das Ziel der
+                                Verbesserung der Effizi- enz der Ressourcennutzung ergänzt. Um die
+                                genannten Ziele zu erreichen, soll das Gesetz das Marktverhalten der
+                                durch das Gesetz Verpflichteten so regeln, dass die
+                                abfallwirtschaft- lichen Ziele erreicht und gleichzeitig die
+                                Marktteilnehmer vor unlauterem Wettbewerb ge- schützt werden. </p>
+                        </tblock>
+                        <!-- Zu § 2 -->
+                        <tblock>
+                            <heading>Zu <ref href="">§ 1</ref> (Anwendungsbereich)</heading>
+                            <p> Die WEEE-Richtlinie sieht in Artikel 2 Absatz 1 eine gestufte
+                                Ausweitung des Anwendungs- bereichs vor. Diese Regelungen werden
+                                durch § 2 im Zusammenhang mit § 47 umgesetzt.</p>
+                            <p> Absatz 1 regelt den Anwendungsbereich nach Ablauf der Übergangsfrist
+                                zum 15. August 2018 und setzt damit Artikel 2 Absatz 1 Buchstabe b
+                                der WEEE-Richtlinie um. Nach diesem Zeitpunkt fallen sämtliche
+                                Elektro- und Elektronikgeräte, die in sechs Kategorien eingeteilt
+                                werden, in den Anwendungsbereich des ElektroG. Dieser offene
+                                Anwendungsbereich wird insbesondere durch die Kategorien 4
+                                (Großgeräte) und 5 (Kleingeräte) erreicht, in die alle Elektro- und
+                                Elektronikgeräte, die keiner der anderen Kategorien zugehörig sind,
+                                in Abhän- gigkeit von ihren Abmessungen zugeordnet werden können.
+                                Anlage 1 enthält entsprechend Anhang III der WEEE-Richtlinie eine
+                                nicht abschließende Liste von Elektro- und Elektronik- geräten, die
+                                nach dem Ablauf der Übergangsfrist in den Anwendungsbereich fallen. </p>
+                            <p> Absatz 2 schließt bestimmte Elektro- und Elektronikgeräte aus
+                                übergeordneten Erwägungen vom Anwendungsbereich des ElektroG sowohl
+                                für den Übergangszeitraum als auch die Zeit nach dem Ablauf der
+                                Übergangsfrist aus. Die Vorschrift enthält neben den bisherigen Aus-
+                                nahmen auch Neuregelungen in Umsetzung von Artikel 2 Absatz 3 und 4
+                                der WEEE- Richtlinie. </p>
+                            <p> Nummer 1 regelt in Umsetzung von Artikel 2 Absatz 3 Buchstabe a der
+                                WEEE-Richtlinie den Ausschluss für Geräte, die der Wahrung der
+                                wesentlichen Sicherheitsinteressen der Bundes- republik Deutschland
+                                dienen. Er entspricht inhaltlich dem bisherigen § 2 Absatz 2
+                                ElektroG. Die Ausnahme rechtfertigt sich aus Artikel 346 Absatz 1
+                                Buchstabe b AEUV. Hiernach kann jeder Mitgliedsstaat Maßnahmen
+                                ergreifen, die seines Erachtens für die Wahrung seiner we-
+                                sentlichen Sicherheitsinteressen erforderlich sind, soweit sie die
+                                Erzeugung von Waffen, Munition und Kriegsmaterial oder den Handel
+                                damit betreffen. </p>
+                            <p> Nummer 2 regelt in Umsetzung von Artikel 2 Absatz 3 Buchstabe b der
+                                WEEE-Richtlinie den Ausschluss von Geräten, die Teil eines anderen
+                                Gerätes sind. Er entspricht im Wesentlichen dem bisherigen § 2
+                                Absatz 1 Satz 1 ElektroG. Wesentliche Merkmale dieses Ausschlusses
+                                sind der Einbau in ein anderes Gerät und die fehlende eigene
+                                Funktionalität des eingebauten Gerätes. Insofern fällt ein Gerät
+                                dann nicht unter den Ausschluss, wenn es über eine eigene
+                                spezifische Funktionalität verfügt und von dem anderen Gerät ohne
+                                unverhältnismäßigen Aufwand getrennt werden kann. </p>
+                            <p> Nummer 3 regelt in Umsetzung von Artikel 2 Absatz 3 Buchstabe c der
+                                WEEE-Richtlinie den Ausschluss von Glühlampen. Er entspricht
+                                inhaltlich dem bisherigen Ausschluss über § 2 Absatz 1 Satz 2 i. V.
+                                m. Anhang 1 Nummer 5 ElektroG. </p>
+                            <p> Nummer 4 regelt in Umsetzung von Artikel 2 Absatz 4 Buchstabe a der
+                                WEEE-Richtlinie den Ausschluss von Ausrüstungsgegenständen für den
+                                Einsatz im Weltraum. Auch wenn das bisherige ElektroG keinen
+                                expliziten Ausschluss für diese Geräte in § 2 vorsah, waren diese
+                                bislang dadurch ausgeschlossen, dass sie keiner der bestehenden zehn
+                                Gerätekategorien zugeordnet werden konnten. Unter den Ausschluss
+                                fallen Elektro- und Elektronikgeräte, die für einen Einsatz oberhalb
+                                von 100 km über dem Meeresspiegel bestimmt sind. Hierzu gehö- ren
+                                z.B. Satelliten oder Raumsonden.</p>
+                            <p> Nummer 5 regelt in Umsetzung von Artikel 2 Absatz 4 Buchstabe b der
+                                WEEE-Richtlinie den Ausschluss von ortsfesten industriellen
+                                Großwerkzeugen. Er entspricht inhaltlich dem bishe- rigen Ausschluss
+                                über § 2 Absatz 1 Satz 1 Nummer 6 ElektroG. Eine Definition der
+                                ortsfes- ten industriellen Großwerkzeuge findet sich in § 3 Nummer
+                                16. </p>
+                            <p> Nummer 6 regelt in Umsetzung von Artikel 2 Absatz 4 Buchstabe c der
+                                WEEE-Richtlinie den Ausschluss von ortsfesten Großanlagen. Auch wenn
+                                das bisherige ElektroG keinen explizi- ten Ausschluss für diese
+                                Geräte in § 2 vorsah, waren diese bislang dadurch ausgeschlossen,
+                                dass sie keiner der bestehenden zehn Gerätekategorien zugeordnet
+                                werden konnten. Eine Definition der ortsfesten Großanlagen findet
+                                sich in § 3 Nummer 17. Standardisierte, d.h. nicht ausschließlich
+                                für die Verwendung in der ortsfesten Großanlage konstruierte Geräte,
+                                die in einer ortsfesten Großanlage verwendet werden können, sind
+                                weder von diesem noch vom Ausschluss nach § 2 Absatz 2 Nummer 2
+                                ElektroG umfasst. </p>
+                            <p> Nummer 7 regelt in Umsetzung von Artikel 2 Absatz 4 Buchstabe d der
+                                WEEE-Richtlinie den Ausschluss von Verkehrsmitteln zur Personen- und
+                                Güterbeförderung. Auch wenn das bis- herige ElektroG keinen
+                                expliziten Ausschluss für diese Geräte in § 2 vorsah, waren diese
+                                nur insoweit vom Anwendungsbereich erfasst, als sie unter die
+                                Kategorie der Sport- und Frei- zeitgeräte nach § 2 Absatz 1 Satz 1
+                                Nummer 7 des bisherigen ElektroG fielen. </p>
+                            <p> Verkehrsmittel sind bewegliche technische Einrichtungen, die der
+                                Beförderung von Personen und Gütern dienen. Zu den Verkehrsmitteln
+                                gehören grundsätzlich </p>
+                                <ul>
+                                    <li>muskelkraftbetriebene (z.B. Fahrräder),</li>
+                                    <li>motorgetriebene (z.B. PKW, Flugzeuge, Schiffe), sowie</li>
+                                    <li>spurgebundene (z.B. Züge, U-Bahnen)</li>
+                                </ul> <p>Fortbewegungsmittel. </p>
+                            <p> Elektrisch angetriebene typgenehmigte Zweiradfahrzeuge sind vom
+                                Ausschluss nach Num- mer 7 erfasst und unterliegen damit nicht den
+                                Anforderungen dieses Gesetzes. Umgekehrt sind elektrisch
+                                angetriebene, nicht typgenehmigte Zweiradfahrzeuge nicht von dem
+                                Aus- schluss erfasst und unterliegen damit den Anforderungen dieses
+                                Gesetzes. Welche Fahr- zeuge einer Typgenehmigungspflicht
+                                unterliegen, richtet sich nach der Richtlinie 2002/24/EG des
+                                Europäischen Parlaments und des Rates vom 18. März 2002 über die
+                                Typgenehmigung für zweirädrige oder dreirädrige Fahrzeuge und zur
+                                Aufhebung der Richtlinie 92/61/EWG des Rates (ABl. L 124 vom
+                                09.05.2002, S.1), die durch die die EG-
+                                Fahrzeuggenehmigungsverordnung in nationales Recht umgesetzt wurde. </p>
+                            <p> Von den Anforderungen der Richtlinie 2002/24/EG und damit von der
+                                Typprüfung ausge- nommen sind Fahrräder mit Trethilfe bis zu 25 km/h
+                                (sog. Pedelecs) im Sinne des Art. 1 Ab- satz 1 Satz 2 Buchstabe h.
+                                Diese unterliegen damit den Anforderungen dieses Gesetzes. Auch
+                                zweirädrige Fahrzeuge, die für den sportlichen Wettbewerb auf der
+                                Straße oder im Ge- lände bestimmt sind, bedürfen ebenfalls keiner
+                                Typgenehmigung und unterliegen damit den Anforderungen des ElektroG.
+                                Hingegen sind Elektrofahrräder </p>
+                                <ul>
+                                    <li>mit unlimitierter Tretunterstützung (S-Pedelec) </li>
+                                    <li>mit tretunabhängigem Zusatzantrieb (E-Bike) sowie</li>
+                                    <li>Elektro(fahr)räder ohne Tretantrieb</li>
+                                </ul> 
+                                <p>von der Typgenehmigung nach der Richtlinie 2002/24/EG erfasst
+                                und fallen damit unter den Ausschluss unter Nummer 7. Nach § 2
+                                Absatz 1 Nummer 1 und Absatz 2 Nummer 1 der
+                                Mobilitätshilfenverordnung vom 16. Juli 2009 (BGBl. I S. 2097) in
+                                Verbindung mit § 20 StVZO bedürfen sog. Segways einer Typgenehmigung
+                                und fallen damit ebenfalls nicht in den An- wendungsbereich des
+                                ElektroG. </p>
+                            <p> Nummer 8 regelt in Umsetzung von Artikel 2 Absatz 4 Buchstabe e der
+                                WEEE-Richtlinie den Ausschluss von beweglichen Maschinen und
+                                Geräten. Auch wenn das bisherige ElektroG keinen expliziten
+                                Ausschluss für diese Geräte in § 2 vorsah, waren diese nur insoweit
+                                vom Anwendungsbereich erfasst, als sie unter eine der Kategorien
+                                nach § 2 Absatz 1 Satz 1 des bisherigen ElektroG fielen. Eine
+                                Definition der beweglichen Maschinen und Geräte findet sich in § 3
+                                Nummer 18. </p>
+                            <!-- Auslassen der restlichen Textabschnitte -->
+                        </tblock>
+                        <!-- Auslassen der restslichen Paragraphen -->
+                    </tblock>
+                    <!-- Zu Abschnitt 2 -->
+                    <tblock>
+                        <heading>Zu <ref href="">Abschnitt 2</ref> (Pflichten beim Inverkehrbringen
+                            von Elektro- und Elektronikgeräten)</heading>
+                        <p> Der Abschnitt 2 enthält Vorgaben, die an das Inverkehrbringen von
+                            Elektro- und Elektronik- geräten geknüpft sind. Wesentliche Elemente
+                            sind dabei die Regelungen zur Registrierung, Garantiestellung und
+                            Bevollmächtigenbenennung, die für die weiteren Herstellerpflichten des
+                            ElektroG von besonderer Bedeutung sind. </p>
+                        <!-- Zu § 4 -->
+                        <tblock>
+                            <heading>Zu <ref href="">§ 4</ref> (Produktkonzeption)</heading>
+                            <p>§ 4 setzt Artikel 4 der WEEE-Richtlinie um und entspricht
+                                weitestgehend § 4 des bisherigen ElektroG. </p>
+                            <p>Die Regelung enthält in Absatz 1 Satz 1 ein Gestaltungsgebot, das die
+                                Wiederverwendung von Elektro- und Elektronikgeräten fördern soll.
+                                Satz 2 und 3 setzen die Vorgaben der Richt- linie 2013/65/EU vom 20.
+                                November 2013 zur Änderung der Richtlinie 2006/66/EG des Eu-
+                                ropäischen Parlaments und des Rates über Batterien und Akkumulatoren
+                                sowie Altbatterien und Altakkumulatoren hinsichtlich des
+                                Inverkehrbringens von Cadmium enthaltenden Gerä- tebatterien und
+                                -akkumulatoren, die zur Verwendung in schnurlosen Elektrowerkzeugen
+                                be- stimmt sind, und von Knopfzellen mit geringem Quecksilbergehalt
+                                sowie zur Aufhebung der Entscheidung 2009/603/EG der Kommission
+                                um.</p>
+                            <p>Absatz 2 Satz 1 richtet sich gegen das Inverkehrbringen von Elektro-
+                                und Elektronikgeräten, bei denen die Wiederverwendung durch
+                                besondere Konstruktionsmerkmale verhindert wird.</p>
+                            <p>Absatz 3 stellt eine Ausnahme von den Gestaltungsvorgaben des
+                                Absatzes 1 Satz 2 und 3 mit Blick auf die Entnehmbarkeit von
+                                Batterien und Akkumulatoren dar und setzt die Richtli- nie
+                                2013/65/EU um.</p>
+                        </tblock>
+                        <!-- Zu § 5 -->
+                        <tblock>
+                            <heading>Zu <ref href="">§ 5</ref></heading>
+                            <p>...</p>
+                        </tblock>
+                        <!-- Auslassen der restslichen Paragraphen -->
+                    </tblock>
+                    <!-- Zu Abschnitt 3 -->
+                    <tblock> 
+                        <heading>Zu <ref href="">Abschnitt 3</ref> ()</heading>
+                        <p>....</p>
+                    </tblock>
+                    <!-- Auslassen der restlichen Abschnitte und Paragraphen -->
+                </tblock>
+                <!-- Zu Artikel 2 -->
+                <tblock>
+                    <heading> Zu <ref href="">Artikel 2</ref> (Änderung des
+                        Abfallverbringungsgesetzes)</heading>
+                    <p> Mit Artikel 2 wird ein klarstellender Hinweis im Abfallverbringungsgesetz
+                        ergänzt, demzufolge § 23 Absatz 4 und Absatz 5 Satz 1 des neuen ElektroG für
+                        anwendbar erklärt werden. </p>
+                </tblock>
+                <!-- Zu Artikel 3 -->
+                <tblock>
+                    <heading> Zu <ref href="">Artikel 3</ref> (Änderung des
+                        Kreislaufwirtschaftsgesetzes)</heading>
+                    <p> Mit Artikel 3 werden im Wesentlichen redaktionelle Änderungen im
+                        Kreislaufwirtschaftsge- setz vorgenommen.</p>
+                    <!-- Zu Nummer 1 -->
+                    <tblock>
+                        <heading>Zu <ref href="">Nummer 1</ref> (§ 47 Absatz 9 KrWG)</heading>
+                        <p> Die Änderung behebt ein redaktionelles Versehen. Die Berichtspflicht der
+                            Länder ist nicht in Absatz 6 sondern in Absatz 8 geregelt. </p>
+                    </tblock>
+                    <!-- Zu Nummer 2 -->
+                    <tblock>
+                        <heading>Zu <ref href="">Nummer 2</ref> (§ 53 Absatz 6 KrWG)</heading>
+                        <p>Mit der Ergänzung wird nach dem Vorbild des § 54 Absatz 7 Nummer 5 KrWG
+                            eine gegen- über der allgemeinen Regelung des § 52 Absatz 1 Satz 2
+                            Nummer 7 KrWG spezielle Ver- ordnungsermächtigung für die Pflicht zur
+                            Mitführung der Anzeige normiert. Die Änderung steht im Zusammenhang mit
+                            der Ergänzung des Bußgeldblanketts in § 69 Absatz 2 Nummer 15 KrWG. </p>
+                    </tblock>
+                    <!-- Zu Nummer 3 -->
+                    <tblock>
+                        <heading>Zu <ref href="">Nummer 3</ref> (§ 69 Absatz 2 KrWG)</heading>
+                        <p>Die in Buchstabe a enthaltene Änderung behebt ein redaktionelles
+                            Versehen. § 18 Absatz 1 KrWG hat nur einen Satz. Die in Buchstabe b
+                            enthaltene Ergänzung des Bußgeldblanketts um die
+                            Verordnungsermächtigungen des § 53 Absatz 6 Nummer 5 und des § 54 Absatz
+                            7 Nummer 5 dient der teilweisen Umsetzung der Entschließung des
+                            Bundesrates (BR-Drs. 665/13 (Beschluss), S. 24 f.). Dort wird die
+                            Bundesregierung unter anderem gebeten, dafür Sorge zu tragen, dass
+                            Verstöße gegen die Mitführungspflicht von Anzeigen § 53 KrWG und
+                            Erlaubnissen nach § 54 KrWG bei der Beförderung von Abfällen zukünftig
+                            mit einem Buß- geld belegt werden können. </p>
+                    </tblock>
+                </tblock>
+                <!-- Zu Artikel 4 -->
+                <tblock>
+                    <heading> Zu <ref href="">Artikel 4</ref> ((Folgeänderung)</heading>
+                    <p> Dieser Artikel enthält die gesamten Folgeänderungen, welche sich aus der
+                        Änderung des ElektroG insbesondere im Hinblick auf die veränderte
+                        Paragraphenabfolge ergeben. </p>
+                </tblock>
+                <!-- Zu Artikel 5 -->
+                <tblock>
+                    <heading> Zu <ref href="">Artikel 5</ref> (Inkrafttreten,
+                        Außerkrafttreten)</heading>
+                    <p> Dieser Artikel betrifft das Inkrafttreten des gesamten Gesetzes zur
+                        Neuordnung des Geset- zes über das Inverkehrbringen, die Rücknahme und die
+                        umweltverträgliche Entsorgung von Elektro- und Elektronikgeräten und das
+                        Außerkrafttreten des bisherigen Elektro- und Elektro- nikgerätegesetzes.</p>
+                </tblock>
+            </tblock>
+        </mainBody>
+    </doc>
+</akomaNtoso>

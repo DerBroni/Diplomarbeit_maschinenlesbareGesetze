@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ##############################################################################
+    
+	Februar 2020
+	
+	Nicht normatives Beispiel zur Umsetzung eines Regelungsentwurfs in LegalDocML.de.
+    Textkürzungen und -auslassungen gegenüber dem Originaldokument dienen der besseren Übersichtlichkeit in der vorliegenden XML-Instanz. 
+    
+    Version:
+    LegalDocML.de 1.0
+    
+    Art des Regelungsentwurfs: 
+    Mantelgesetz inklusive Stammgesetz inklusive Änderungsnovelle 
+        
+    Kurztitel und amtliche Abkürzung:
+    Elektro-  und Elektronikgerätegesetz - ElektroG
+    
+############################################################################## -->
+
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd"
+    xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+    <doc name="vorblatt" xsi:type="vorblatt">
+        <!-- Metadaten -->
+        <meta>
+            <identification source="#BMU">
+                <FRBRWork>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/!vorblatt"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/!vorblatt"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRcountry value="de"/>
+                    <FRBRnumber value="a01fc9bd"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!vorblatt"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!vorblatt"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRversionNumber value=""/>
+                    <FRBRlanguage language="deu"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!vorblatt.xml"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!vorblatt.xml"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                </FRBRManifestation>
+            </identification>
+        </meta>
+        <!-- Dokumentenkopf Vorblatt -->
+        <preface>
+            <longTitle>
+                <p>
+                    <docStage>Referentenentwurf</docStage> des
+                        <docProponent>Bundesumweltministeriums</docProponent>
+                    <docTitle>Gesetz zur Neuordnung des Gesetzes über das Inverkehrbringen, die
+                        Rücknahme und die umweltverträgliche Entsorgung von Elektro- und
+                        Elektronikgeräten</docTitle> (<shortTitle>Elektro- und
+                        Elektronikgerätegesetz - <inline xsi:type="amtlicheAbkuerzung"
+                            name="amtlicheAbkuerzung">ElektroG</inline>) </shortTitle>
+                </p>
+            </longTitle>
+            <p/>
+        </preface>
+        <!-- Hauptteil Vorblatt -->
+        <mainBody>
+            <!-- Problem und Ziel -->
+            <tblock title="problemUndZiel" xsi:type="vorblattabschnittProblemUndZiel">
+                <num>A.</num>
+                <heading>Problem und Ziel</heading>
+                <p>Am <date xsi:type="datum" date="2013-08-13" refersTo="#Inkrafttreten">13. August
+                        2013</date>
+                </p>
+                <p> ist die <ref href="">Richtlinie 2012/19/EU des Europäischen Parlaments und des
+                        Rates vom 04. Juli 2012 über Elektro- und Elektronik-Altgeräte
+                        (WEEE-Richtlinie)</ref> in Kraft getreten. Ziel der Richtlinie ist es, die
+                    schädlichen Auswirkungen der Entstehung und Bewirtschaftung von Elektro- und
+                    Elektronik-Altgeräten zu vermeiden oder zu verringern, die Gesamtauswirkungen
+                    der Ressourcennutzung zu reduzieren und die Effizienz der Ressourcennutzung zu
+                    steigern. Die Richtlinie ist bis zum <date xsi:type="datum" date="2014-02-14"
+                        refersTo="">14. Februar 2014</date> in nationales Recht umzusetzen. Im
+                    Zusammenhang mit der Umsetzung des EU-Rechts soll auch das bestehende Elektro-
+                    und Elektronikgerätegesetz (ElektroG) fortentwickelt werden, um sicherzustellen,
+                    dass zukünftig deutlich mehr Elektro- und Elektronik-Altgeräte einer
+                    ordnungsgemäßen und umweltfreundlichen Entsorgung zugeführt werden. Hierdurch
+                    soll ein Beitrag zur Ressourcenschonung geleistet werden.</p>
+            </tblock>
+            <!-- Lösung -->
+            <tblock title="loesung" xsi:type="vorblattabschnittLoesung">
+                <num>B.</num>
+                <heading>Lösung</heading>
+                <p>Mit dem vorliegenden Gesetzesentwurf wird die WEEE-Richtlinie in deutsches Recht
+                    umgesetzt. Generelle Linie des Gesetzesentwurfes ist es, die bewährten Sammel-
+                    und Entsorgungsstrukturen des bestehenden ElektroG zu erhalten und die neuen
+                    Vorgaben der WEEE- Richtlinie möglichst „eins zu eins“ in das bestehende
+                    Rechtssystem zu integrieren, ohne die in der deutschen Abfallwirtschaft
+                    erreichten hohen Standards abzuschwächen. Um die Effizienz der bestehenden
+                    Sammel- und Entsorgungsstrukturen weiter zu steigern, werden zudem Vorgaben
+                    etabliert, die den praktischen Erfahrungen und Schwierigkeiten Rechnung tragen
+                    und zu einer größeren Transparenz führen sollen. </p>
+
+            </tblock>
+            <!-- Alternativen -->
+            <tblock title="alternativen" xsi:type="vorblattabschnittAlternativen">
+                <num>C.</num>
+                <heading>Alternativen</heading>
+                <p>Die Umsetzung der europäischen Richtlinie ist zwingend.</p>
+
+            </tblock>
+            <!-- Haushaltsausgaben ohne Erfüllungsaufwand -->
+            <tblock title="haushaltsausgabenOhneErfuellungsaufwand"
+                xsi:type="vorblattabschnittHaushaltsausgabenOhneErfuellungsaufwand">
+                <num>D.</num>
+                <heading>Haushaltsausgaben ohne Erfüllungsaufwand</heading>
+
+                <p>Es sind keine zusätzlichen Haushaltsausgaben ohne Erfüllungsaufwand zu
+                    erwarten.</p>
+
+            </tblock>
+            <!-- Erfüllungsaufwand -->
+            <tblock title="erfuellungsaufwand" xsi:type="vorblattabschnittErfuellungsaufwand">
+                <num>E.</num>
+                <heading>Erfüllungsaufwand</heading>
+                <!-- Erfüllungsaufwand für Bürgerinnen und Bürger -->
+                <tblock title="erfuellungsaufwandFuerBuergerinnenUndBuerger"
+                    xsi:type="erfuellungsaufwandFuerBuergerinnenUndBuerger">
+                    <num>E.1</num>
+                    <heading> Erfüllungsaufwand für Bürgerinnen und Bürger </heading>
+
+                    <p>[.]</p>
+
+                </tblock>
+                <!-- Erfüllungsaufwand für die Wirtschaft -->
+                <tblock title="erfuellungsaufwandFuerDieWirtschaft"
+                    xsi:type="erfuellungsaufwandFuerDieWirtschaft">
+                    <num>E.2</num>
+                    <heading> Erfüllungsaufwand für die Wirtschaft </heading>
+
+                    <p>[.]</p>
+
+                    <tblock title="davonBuerokratiekostenAusInformationspflichten">
+                        <heading> Davon Bürokratiekosten aus Informationspflichten</heading>
+
+                        <p>[.]</p>
+
+                    </tblock>
+                </tblock>
+                <!-- Erfüllungsaufwand der Verwaltung -->
+                <tblock title="erfuellungsaufwandDerVerwaltung"
+                    xsi:type="erfuellungsaufwandDerVerwaltung">
+                    <num>E.3</num>
+                    <heading> Erfüllungsaufwand der Verwaltung</heading>
+
+                    <p>[.]</p>
+
+                </tblock>
+            </tblock>
+            <!-- Weitere Kosten -->
+            <tblock title="weitereKosten" xsi:type="vorblattabschnittWeitereKosten">
+                <num>F.</num>
+                <heading>Weitere Kosten</heading>
+                <p>Ob und in welchem Maße eine Überwälzung der Entsorgungskosten in die
+                    Verbraucherpreise erfolgt, ist von einer Reihe von Einflussfaktoren abhängig, u.
+                    a. von der Wettbewerbsintensität auf den jeweiligen Märkten. Eine
+                    Kostenüberwälzung ist insofern nicht auszuschließen, kann in ihrer Höhe aber
+                    nicht abgeschätzt werden.</p>
+            </tblock>
+        </mainBody>
+    </doc>
+</akomaNtoso>

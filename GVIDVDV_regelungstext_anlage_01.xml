@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ##############################################################################
+    
+	Februar 2020
+	
+	Nicht normatives Beispiel zur Umsetzung eines Regelungsentwurfs in LegalDocML.de.
+    Textkürzungen und -auslassungen gegenüber dem Originaldokument dienen der besseren Übersichtlichkeit in der vorliegenden XML-Instanz. 
+    
+    Version:
+    LegalDocML.de 1.0
+    
+    Art des Regelungsentwurfs: 
+    Mantelgesetz inklusive Stammgesetz inklusive Änderungsnovelle 
+        
+    Kurztitel und amtliche Abkürzung:
+    Elektro-  und Elektronikgerätegesetz - ElektroG
+    
+############################################################################## -->
+
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd"
+ xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+    <doc name="anlage" xsi:type="anlage" >
+        <!-- Metadaten -->
+        <meta>
+            <identification source="#BMU">
+                <FRBRWork>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/!anlage_01"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/!anlage_01"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRcountry value="de"/>
+                    <FRBRnumber value="a01fc9bd"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!anlage_01"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!anlage_01"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                    <FRBRversionNumber value=""/>
+                    <FRBRlanguage language="deu"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!anlage_01.xml"/>
+                    <FRBRuri value="/akn/de/documentcollection/a01fc9bd/deu@2016-11-03/!anlage_01.xml"/>
+                    <FRBRdate date="2016-11-03" name="Erstellung des Referentenentwurfs"/>
+                    <FRBRauthor href="#Referent"/>
+                </FRBRManifestation>
+            </identification>
+        </meta>
+        <!-- Dokumentenkopf -->
+        <preface>
+            <longTitle>
+                <p>
+                    <docTitle>Anlage 1 </docTitle>
+                </p>
+            </longTitle>
+            <container name="Referenz">
+                <p>
+                    <ref href="">(zu § 10 Absatz2 Nummer 1)</ref>
+                </p>
+            </container>
+            <container name="Titel">
+                <p>
+                    Nicht abschließende Liste mit Elektro- und Elektronikgeräten, die
+                    unter die Gerätekategorien des <ref href="">§ 2 Absatz 1</ref> fallen
+                </p>
+            </container>
+        </preface>
+        <mainBody>
+            <blockContainer>
+            <ul xsi:type="unnummerierteListe" >
+                <li>Wärmeüberträger</li>
+                <li>Kühlschränke</li>
+                <li>Gefriergeräte</li>
+                <li>Geräte zur automatischen Abgabe von Kalktprodukten</li>
+                <li>Klimageräte Entfeuchter</li>
+                <li>Wärmepumpen</li>
+                <li>Wärmepumpentrockner</li>
+                <li>ölgefüllte Radiatoren</li>
+                <li>Sonstige Wärmeüberträger, bei denen andere Flüssigkeiten als Wasser für die
+                    Wärmeübertragung verwendet werden.</li>
+            </ul>
+            <!-- Auslassen der restlichen Unterpunkte -->
+            </blockContainer>
+        </mainBody>
+    </doc>
+</akomaNtoso>
