@@ -250,18 +250,35 @@
                             </clause>
                         </alinea>
                     </paragraph>
-                    <!-- $ 5 -->
+                    <!-- $ 4 -->
                     <paragraph>
-                        <num>§ 5</num>
-                        <heading>Einrichten der Gemeinsamen Stelle</heading>
+                        <num>§ 4</num>
+                        <heading>Auswahlverfahren</heading>
                         <!-- Absatz 1 -->
                         <alinea>
                             <num>(1)</num>
                             <!-- Satz 1 -->
                             <clause xsi:type="satzOhneUntergliederung">
                                 <content>
-                                    <p> Die Hersteller oder deren Bevollmächtigte sind verpflichtet,
-                                        eine Gemeinsame Stelle ein- zurichten. </p>
+                                    <p> Über die Einstellung in den Vorbereitungsdienst entscheidet die 
+                                        Einstellungsbehörde auf der Grundlage eines Auswahlverfahrens. </p>
+                                </content>
+                            </clause>
+                            <!-- Satz 2 -->
+                            <clause>
+                                <content>
+                                    <p>
+                                        In diesem wird festgestellt, ob die Bewerberinnen und Bewerber nach ihren Kenntnissen,
+                                        Fähigkeiten und persönlichen Eigenschaften für den Vorbereitungsdienst geeignet sind.
+                                    </p>
+                                </content>
+                            </clause>
+                            <!-- Satz 3 -->
+                            <clause>
+                                <content>
+                                    <p>
+                                        Das Auswahlverfahren besteht aus einem schriftlichen und einem mündlichen Teil.
+                                    </p>
                                 </content>
                             </clause>
                         </alinea>
@@ -271,20 +288,52 @@
                             <!-- Satz 1 -->
                             <clause xsi:type="satzOhneUntergliederung">
                                 <content>
-                                    <p>Ist die Gemeinsame Stelle nicht eingerichtet oder nimmt die
-                                        Gemeinsame Stelle ihre Auf- gaben nach § 31 Absatz 5 Satz 1
-                                        oder Absatz 7 Satz 1 und 3 nicht wahr, ist jeder Hersteller
-                                        oder dessen Bevollmächtigter verpflichtet, den
-                                        öffentlich-rechtlichen Entsorgungsträgern die Kosten für die
-                                        Sammlung, Sortierung und Entsorgung seiner Altgeräte zu
-                                        erstatten. </p>
+                                    <p>Zum Auswahlverfahren wird zugelassen, wer nach den eingereichten Unterlagen 
+                                        die in der Ausschreibung bestimmten Voraussetzungen erfüllt.</p>
                                 </content>
                             </clause>
                             <!-- Satz 2 -->
                             <clause xsi:type="satzOhneUntergliederung">
                                 <content>
-                                    <p>Die nach Landesrecht zuständige Behörde setzt die Kosten
-                                        durch Verwaltungsakt fest.</p>
+                                    <p>Übersteigt die Zahl der geeigneten Bewerberinnen und Bewerber das Dreifache
+                                        der Zahl der Studienplätze, die der Einstellungsbehörde zur Verfügung stehen, 
+                                        kann die Zahl der am Auswahlverfahren Teilnehmenden beschränkt werden; 
+                                        jedoch sind mindestens dreimal so viele Bewerberinnen und Bewerber zuzulassen,
+                                        wie Studienplätze angeboten werden.
+                                    </p>
+                                </content>
+                            </clause>
+                            <!-- Satz 3 -->
+                            <clause>
+                                <content>
+                                    <p>
+                                        In diesem Fall wird zugelassen, wer nach den eingereichten Unterlagen am besten
+                                        geeignet ist.
+                                    </p>
+                                </content>
+                            </clause>
+                            <!-- Satz 4 -->
+                            <clause>
+                                <content>
+                                    <p>
+                                        Daneben werden schwerbehinderte und diesen gleichgestellte behinderte Menschen 
+                                        sowie ehemalige Soldatinnen auf Zeit und ehemalige Soldaten auf Zeit mit Eingliederungs-
+                                        oder Zulassungsschein zum Auswahlverfahren zugelassen, wenn sie die in der Ausschreibung 
+                                        bestimmten Voraussetzungen erfüllen.
+                                    </p>
+                                </content>
+                            </clause>
+                        </alinea>
+                        <!-- Absatz 3 -->
+                        <alinea>
+                            <num>(3)</num>
+                            <!-- Satz 1 -->
+                            <clause>
+                                <content>
+                                    <p>
+                                        Wer zum Auswahlverfahren nicht zugelassen wird oder daran erfolglos teilgenommen
+                                        hat, erhält eine schriftliche Mitteilung über die Ablehnung. 
+                                    </p>
                                 </content>
                             </clause>
                         </alinea>
