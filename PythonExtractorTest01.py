@@ -2,10 +2,15 @@ import xml.etree.ElementTree as ET
 tree = ET.parse('GVIDVDV_regelungstext.xml')
 root = tree.getroot()
 
-root.tag
-'akomaNtoso'
-root.attrib
-{}
+parser = ET.XMLPullParser(['start', 'end'])
+parser.feed('<mytag>sometext')
+list(parser.read_events())
 
-for child in root:
-    print(child.tag, child.attrib)
+parser.feed(' more text</mytag>')
+for event, elem in parser.read_events():
+    print(event)
+    print(elem.tag, 'text=', elem.text)
+
+
+for bill in root.iter('bill'):
+    print(bill.attrib)
