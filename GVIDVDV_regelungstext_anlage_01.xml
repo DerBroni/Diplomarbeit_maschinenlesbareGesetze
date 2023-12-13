@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- ##############################################################################
     
@@ -19,7 +19,7 @@
 ############################################################################## -->
 
 <akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd"
+ xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 /Schema/LegalDocML.de.xsd"
  xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
     <doc name="anlage" xsi:type="anlage" >
         <!-- Metadaten -->
@@ -70,19 +70,21 @@
         </preface>
         <mainBody>
             <blockContainer>
-            <ul xsi:type="unnummerierteListe" >
-                <li>Wärmeüberträger</li>
-                <li>Kühlschränke</li>
-                <li>Gefriergeräte</li>
-                <li>Geräte zur automatischen Abgabe von Kalktprodukten</li>
-                <li>Klimageräte Entfeuchter</li>
-                <li>Wärmepumpen</li>
-                <li>Wärmepumpentrockner</li>
-                <li>ölgefüllte Radiatoren</li>
-                <li>Sonstige Wärmeüberträger, bei denen andere Flüssigkeiten als Wasser für die
-                    Wärmeübertragung verwendet werden.</li>
-            </ul>
-            <!-- Auslassen der restlichen Unterpunkte -->
+                <ul xsi:type="unnummerierteListe" >
+                    <li>Wärmeüberträger</li>
+                    <li>Kühlschränke</li>
+                    <li>Gefriergeräte</li>
+                    <li>Geräte zur automatischen Abgabe von Kalktprodukten</li>
+                    <li>Klimageräte Entfeuchter</li>
+                    <li>Wärmepumpen</li>
+                    <li>Wärmepumpentrockner</li>
+                    <li>ölgefüllte Radiatoren</li>
+                    <li>
+                        Sonstige Wärmeüberträger, bei denen andere Flüssigkeiten als Wasser für die
+                        Wärmeübertragung verwendet werden.
+                    </li>
+                </ul>
+                <!-- Auslassen der restlichen Unterpunkte -->
             </blockContainer>
         </mainBody>
     </doc>

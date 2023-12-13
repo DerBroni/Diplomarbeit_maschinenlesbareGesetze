@@ -21,7 +21,10 @@
 
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
     xmlns:xsi="./Schema-Dateien/AkomaNtoso_Specs_Schema.xsd"
-    xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../Schema/LegalDocML.de.xsd">
+    xsi:schemaLocation= "http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ./Schemata/LegalDocML.de.xsd">
+    <bill name="Probe-Verordnung Arbeit der FIU">
+    </bill>
+    <bill name="Weitere Probe"></bill>
     <bill name="Probe-Verordnung GVIDVDV">
         <!-- Metadaten -->
         <meta>
@@ -167,7 +170,7 @@
                                 <content>
                                     <p>Als fachspezifischer Vorbereitungsdienst für den gehobenen nichttechnischen Verwaltungsdienst des Bundes wird ein
                                         Vorbereitungsdienst für den Verwaltungsinformatikdienst eingerichtet.
-                                        Zweiter Versuch Probe-Branch
+                                        <extractorInhalt>Zweiter Versuch Probe-Branch</extractorInhalt>
                                     </p>
                                 </content>
                             </clause>
@@ -177,6 +180,7 @@
                             <num>(1)</num>
                             <!-- Satz 1 -->
                             <clause xsi:type="satzOhneUntergliederung">
+                                <extractorInhalt>Hallo? Mecker doch mal!</extractorInhalt>
                                 <content>
                                     <p>Der Diplomstudiengang "Verwaltungsinformatik" an der Hochschule des Bundes für öffentliche Verwaltung (Hochschule)
                                         ist der Vorbereitungsdienst für den gehobenen Verwaltungsinformatikdienst des Bundes.
